@@ -2,6 +2,8 @@
 
 This repository contains the documentation website for LookPilot game guides, built with [Docusaurus](https://docusaurus.io/).
 
+*Last updated: $(date)*
+
 ## 🌐 Live Site
 
 The documentation is available at: [guides.lookpilot.app](https://guides.lookpilot.app)
