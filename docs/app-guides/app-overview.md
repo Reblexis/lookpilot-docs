@@ -1,7 +1,3 @@
----
-title: "App Overview"
----
-
 # Using the LookPilot Application
 
 Welcome to the comprehensive guide for the LookPilot application. This document will walk you through the main features, interface elements, and how to get started with your new head and eye tracking experience.

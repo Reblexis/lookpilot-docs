@@ -4,6 +4,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Helper function to convert kebab-case to Title Case
+function kebabToTitle(str: string): string {
+  return str
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 const config: Config = {
   title: 'LookPilot Guides',
   tagline: 'Community-driven guides for LookPilot head tracking',
@@ -46,6 +54,37 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Reblexis/lookpilot-guides/tree/main/',
+          // Auto-generate titles from file paths
+          sidebarItemsGenerator: async function ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            
+            // Process items to auto-generate better labels
+            function processItems(items: any[]): any[] {
+              return items.map((item) => {
+                if (item.type === 'category') {
+                  // Auto-generate category labels from directory names
+                  if (!item.label || item.label === item.dirName) {
+                    item.label = kebabToTitle(item.dirName || '');
+                  }
+                  if (item.items) {
+                    item.items = processItems(item.items);
+                  }
+                } else if (item.type === 'doc') {
+                  // Auto-generate doc labels from file names
+                  if (!item.label) {
+                    const fileName = item.id.split('/').pop()?.replace(/\.md$/, '') || '';
+                    item.label = kebabToTitle(fileName);
+                  }
+                }
+                return item;
+              });
+            }
+            
+            return processItems(sidebarItems);
+          },
         },
         blog: false, // Disable blog
         theme: {

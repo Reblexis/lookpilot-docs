@@ -1,7 +1,3 @@
----
-title: "Windows Setup"
----
-
 # Setting up LookPilot with IL-2 Sturmovik: Great Battles (Windows)
 
 ## LookPilot Configuration

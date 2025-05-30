@@ -1,7 +1,3 @@
----
-title: "Windows Setup"
----
-
 # Setting up LookPilot with Microsoft Flight Simulator 2020 (Windows)
 
 ## LookPilot Configuration
