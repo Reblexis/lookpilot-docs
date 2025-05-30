@@ -1,0 +1,13 @@
+{
+  "id": "dcs-world",
+  "name": "DCS World",
+  "category": "Flight Simulation",
+  "description": "Configure LookPilot head tracking for realistic flight control in DCS World.",
+  "lastUpdated": "2024-05-31",
+  "version": "1.0.0",
+  "tags": ["dcs", "flight sim", "windows", "freetrack"],
+  "platforms": {
+    "windows": "windows.md",
+    "linux": null
+  }
+} 

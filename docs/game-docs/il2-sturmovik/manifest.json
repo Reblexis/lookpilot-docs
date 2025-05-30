@@ -1,0 +1,13 @@
+{
+  "id": "il2-sturmovik",
+  "name": "IL-2 Sturmovik: Great Battles",
+  "category": "Flight Simulation",
+  "description": "Set up LookPilot head tracking for IL-2 Sturmovik: Great Battles for an enhanced combat flight experience.",
+  "lastUpdated": "2024-05-31",
+  "version": "1.0.0",
+  "tags": ["il2", "flight sim", "world war 2", "windows", "freetrack"],
+  "platforms": {
+    "windows": "windows.md",
+    "linux": null
+  }
+} 

@@ -1,0 +1,15 @@
+{
+  "id": "counter-strike-2",
+  "name": "Counter-Strike 2",
+  "description": "Complete setup guide for using LookPilot head tracking with Counter-Strike 2 on Linux",
+  "category": "FPS",
+  "lastUpdated": "2024-01-15",
+  "version": "1.0.0",
+  "tags": ["fps", "competitive", "steam", "linux"],
+  "platforms": {
+    "windows": null,
+    "linux": "linux.md"
+  },
+  "difficulty": "medium",
+  "estimatedTime": "10 minutes"
+} 

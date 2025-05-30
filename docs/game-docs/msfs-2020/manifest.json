@@ -1,0 +1,15 @@
+{
+  "id": "msfs-2020",
+  "name": "Microsoft Flight Simulator 2020",
+  "description": "Complete setup guide for using LookPilot head tracking with Microsoft Flight Simulator 2020",
+  "category": "Flight Simulation",
+  "lastUpdated": "2024-01-15",
+  "version": "1.0.0",
+  "tags": ["flight-sim", "msfs", "aviation", "simulation"],
+  "platforms": {
+    "windows": "windows.md",
+    "linux": null
+  },
+  "difficulty": "easy",
+  "estimatedTime": "5 minutes"
+} 

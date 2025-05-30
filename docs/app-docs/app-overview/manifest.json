@@ -1,0 +1,10 @@
+{
+  "id": "app-overview",
+  "name": "Using the LookPilot App",
+  "description": "Complete walkthrough of the LookPilot application interface and core functionalities. Learn how to install, configure, and troubleshoot the app.",
+  "category": "Application",
+  "lastUpdated": "2024-05-31",
+  "version": "1.0.0",
+  "tags": ["lookpilot", "application", "setup", "guide"],
+  "guideFile": "guide.md"
+} 
