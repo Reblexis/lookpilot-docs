@@ -1,3 +1,7 @@
+---
+sidebar_label: "Linux"
+---
+
 # Setting up LookPilot with Counter-Strike 2 (Linux)
 
 > **🐧 Linux Note:** This guide is specifically for Linux systems. CS2 runs through Steam with Proton compatibility layer.

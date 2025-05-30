@@ -1,3 +1,7 @@
+---
+sidebar_label: "Windows"
+---
+
 # Setting up LookPilot with IL-2 Sturmovik: Great Battles (Windows)
 
 ## LookPilot Configuration

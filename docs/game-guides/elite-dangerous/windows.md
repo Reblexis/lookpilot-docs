@@ -1,3 +1,7 @@
+---
+sidebar_label: "Windows"
+---
+
 # Setting up LookPilot with Elite Dangerous (Windows)
 
 ## LookPilot Configuration

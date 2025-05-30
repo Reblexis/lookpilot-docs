@@ -1,3 +1,7 @@
+---
+sidebar_label: "Windows"
+---
+
 # Setting up LookPilot with DCS World (Windows)
 
 ## LookPilot Configuration
