@@ -7,6 +7,21 @@
         "id": "app-overview",
         "path": "app-docs/app-overview",
         "manifestPath": "app-docs/app-overview/manifest.json"
+      },
+      {
+        "id": "installation",
+        "path": "app-docs/installation",
+        "manifestPath": "app-docs/installation/manifest.json"
+      },
+      {
+        "id": "configuration",
+        "path": "app-docs/configuration",
+        "manifestPath": "app-docs/configuration/manifest.json"
+      },
+      {
+        "id": "troubleshooting",
+        "path": "app-docs/troubleshooting",
+        "manifestPath": "app-docs/troubleshooting/manifest.json"
       }
     ],
     "game-docs": [
