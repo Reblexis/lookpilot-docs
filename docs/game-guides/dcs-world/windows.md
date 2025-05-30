@@ -1,3 +1,7 @@
+---
+title: "Windows Setup"
+---
+
 # Setting up LookPilot with DCS World (Windows)
 
 ## LookPilot Configuration
