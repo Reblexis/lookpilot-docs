@@ -23,4 +23,4 @@ When you first launch LookPilot:
 
 ---
 
-[← Back to All Guides](/guides) | [Home](/) 
+[← Back to All Guides](/guides) | [Home](/) Last updated: Fri May 30 11:31:35 PM CEST 2025
