@@ -1,6 +1,6 @@
 # LookPilot Documentation
 
-Official documentation repository for LookPilot head and eye tracking software. This repository contains all user guides, setup instructions, and troubleshooting documentation that powers the [LookPilot website](https://clearsight-5cc15.web.app).
+Official documentation repository for LookPilot head and eye tracking software. This repository contains all user guides, setup instructions, and troubleshooting documentation that powers the [LookPilot website](https://lookpilot.app).
 
 ## 📚 What's in this Repository
 
@@ -101,7 +101,7 @@ This documentation is provided under the MIT License. See [LICENSE](LICENSE) for
 
 ## 🌐 Website Integration
 
-This documentation is dynamically loaded by the [LookPilot website](https://clearsight-5cc15.web.app) at:
+This documentation is dynamically loaded by the [LookPilot website](https://lookpilot.app) at:
 - **Base URL**: `https://raw.githubusercontent.com/Reblexis/lookpilot-docs/main/`
 - **Index**: `docs/index.json`
 - **Guides**: Individual Markdown files rendered in real-time
