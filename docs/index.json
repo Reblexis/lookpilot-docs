@@ -44,11 +44,6 @@
         "id": "elite-dangerous",
         "path": "game-docs/elite-dangerous",
         "manifestPath": "game-docs/elite-dangerous/manifest.json"
-      },
-      {
-        "id": "counter-strike-2",
-        "path": "game-docs/counter-strike-2",
-        "manifestPath": "game-docs/counter-strike-2/manifest.json"
       }
     ]
   },
