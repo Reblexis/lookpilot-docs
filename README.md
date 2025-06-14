@@ -41,7 +41,7 @@ We welcome community contributions! Here's how you can help improve LookPilot do
    - LookPilot Configuration section
    - Game Setup section
    - Troubleshooting section
-5. **Update `docs/index.json`** to include your new game
+5. **Generate the updated index**: Run `make generate-index` or `python3 generate_index.py`
 6. **Test your guide** with LookPilot
 7. **Submit a pull request**
 
@@ -84,6 +84,23 @@ docs/
 - **Integration**: Automatically loaded by the LookPilot website
 - **Rendering**: Supports code blocks, alerts, and standard Markdown
 - **Platform Support**: Windows and Linux guides
+
+### Automated Index Generation
+
+The `docs/index.json` file is automatically generated from the directory structure:
+
+```bash
+# Generate index.json from directory structure
+make generate-index
+
+# Or run the Python script directly  
+python3 generate_index.py
+
+# Or use the bash script
+./generate_index.sh
+```
+
+The script scans `docs/app-docs/` and `docs/game-docs/` directories, reads each `manifest.json` file, and creates the complete index with categories and platforms automatically extracted from the manifests.
 
 ## 🎯 Priority Contributions
 
