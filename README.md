@@ -6,25 +6,13 @@ Official documentation repository for LookPilot head and eye tracking software. 
 
 This repository contains comprehensive Markdown-based documentation for LookPilot:
 
-### Application Documentation (`docs/app-docs/`)
-- **Installation Guide**: Step-by-step installation instructions
-- **Configuration Guide**: How to configure LookPilot for optimal performance
-- **Troubleshooting Guide**: Common issues and solutions
-- **App Overview**: Complete walkthrough of the LookPilot interface
+- Application Documentation (`docs/app-docs/`)
+- Game Setup Guides (`docs/game-docs/`)
 
-### Game Setup Guides (`docs/game-docs/`)
-Platform-specific setup instructions for popular games:
-- **DCS World** (Windows)
-- **IL-2 Sturmovik** (Windows)
-- **Microsoft Flight Simulator 2020** (Windows)
-- **Elite Dangerous** (Windows)
-- **Counter-Strike 2** (Linux)
-
-Each game guide includes:
+Each game is split into Linux and Windows guides and each guide includes:
 - LookPilot configuration steps
 - In-game setup instructions
 - Troubleshooting tips
-- Platform-specific considerations
 
 ## 🤝 How to Contribute
 
@@ -41,24 +29,23 @@ We welcome community contributions! Here's how you can help improve LookPilot do
    - LookPilot Configuration section
    - Game Setup section
    - Troubleshooting section
-5. **Generate the updated index**: Run `make generate-index` or `python3 generate_index.py`
-6. **Test your guide** with LookPilot
-7. **Submit a pull request**
+5. **Submit a pull request**
 
-### Improving Existing Documentation
+#### Submit Issues
 
-1. **Fork this repository**
-2. **Edit the relevant Markdown files**
-3. **Test your changes** if possible
-4. **Submit a pull request** with a clear description
-
-### Content Guidelines
-
-- **Be clear and concise**: Use simple language and step-by-step instructions
-- **Include screenshots**: When helpful for complex UI interactions
-- **Test thoroughly**: Ensure all steps work as described
-- **Use consistent formatting**: Follow existing Markdown structure
-- **Platform-specific**: Clearly indicate Windows/Linux differences
+1. **Go to the [Issues tab](https://github.com/your-repo/lookpilot-docs/issues)** in this repository
+2. **Click "New Issue"** to create a new issue
+3. **Choose an appropriate issue type**:
+   - Bug report for errors or problems in documentation
+   - Feature request for suggesting new guides or improvements
+   - General question for clarification or help
+4. **Provide clear details**:
+   - Descriptive title summarizing the issue
+   - Detailed description of the problem or suggestion
+   - Steps to reproduce (for bugs)
+   - Screenshots if applicable
+5. **Add relevant labels** to help categorize the issue
+6. **Submit the issue** and our team will review it
 
 ### File Structure
 
@@ -75,54 +62,13 @@ docs/
 │   │   ├── windows.md
 │   │   └── linux.md
 │   └── [other-games]/
-└── index.json
 ```
-
-## 🔧 Technical Details
-
-- **Format**: Markdown with JSON manifests
-- **Integration**: Automatically loaded by the LookPilot website
-- **Rendering**: Supports code blocks, alerts, and standard Markdown
-- **Platform Support**: Windows and Linux guides
-
-### Automated Index Generation
-
-The `docs/index.json` file is automatically generated from the directory structure:
-
-```bash
-# Generate index.json from directory structure
-make generate-index
-
-# Or run the Python script directly  
-python3 generate_index.py
-
-# Or use the bash script
-./generate_index.sh
-```
-
-The script scans `docs/app-docs/` and `docs/game-docs/` directories, reads each `manifest.json` file, and creates the complete index with categories and platforms automatically extracted from the manifests.
-
-## 🎯 Priority Contributions
-
-We're especially looking for guides for these popular games:
-- **Cyberpunk 2077**
-- **Star Citizen**
-- **War Thunder**
-- **Assetto Corsa Competizione**
-- **BeamNG.drive**
-- **Euro Truck Simulator 2**
-
 ## 📝 License
 
 This documentation is provided under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## 🌐 Website Integration
 
-This documentation is dynamically loaded by the [LookPilot website](https://lookpilot.app) at:
-- **Base URL**: `https://raw.githubusercontent.com/Reblexis/lookpilot-docs/main/`
-- **Index**: `docs/index.json`
-- **Guides**: Individual Markdown files rendered in real-time
-
----
+This documentation is dynamically loaded by the [LookPilot website](https://lookpilot.app).
 
 **Made with ❤️ by the LookPilot community**
