@@ -66,5 +66,3 @@ docs/
 ## 📝 License
 
 This documentation is provided under the MIT License. See [LICENSE](LICENSE) for details.
-
-**Made with ❤️ by the LookPilot community**
