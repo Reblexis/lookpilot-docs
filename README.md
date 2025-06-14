@@ -67,8 +67,4 @@ docs/
 
 This documentation is provided under the MIT License. See [LICENSE](LICENSE) for details.
 
-## 🌐 Website Integration
-
-This documentation is dynamically loaded by the [LookPilot website](https://lookpilot.app).
-
 **Made with ❤️ by the LookPilot community**
