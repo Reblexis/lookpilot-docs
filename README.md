@@ -31,7 +31,7 @@ We welcome community contributions! Here's how you can help improve LookPilot do
    - Troubleshooting section
 5. **Submit a pull request**
 
-#### Submit Issues
+### Submit Issues
 
 1. **Go to the [Issues tab](https://github.com/your-repo/lookpilot-docs/issues)** in this repository
 2. **Click "New Issue"** to create a new issue
