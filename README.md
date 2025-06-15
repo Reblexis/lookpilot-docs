@@ -29,19 +29,16 @@ We welcome community contributions! Here's how you can help improve LookPilot do
 
 ### Submit Issues
 
+In issues, you can describe any problems that you have encountered using the guides, request games to be added, describe game guides or generally give any suggestions.
+
 1. **Go to the [Issues tab](https://github.com/your-repo/lookpilot-docs/issues)** in this repository
 2. **Click "New Issue"** to create a new issue
-3. **Choose an appropriate issue type**:
-   - Bug report for errors or problems in documentation
-   - Feature request for suggesting new guides or improvements
-   - General question for clarification or help
-4. **Provide clear details**:
+3. **Provide clear details**:
    - Descriptive title summarizing the issue
-   - Detailed description of the problem or suggestion
+   - Detailed description of the problem, suggestion or game setup
    - Steps to reproduce (for bugs)
    - Screenshots if applicable
-5. **Add relevant labels** to help categorize the issue
-6. **Submit the issue** and our team will review it
+4. **Submit the issue** and our team will review it
 
 ### File Structure
 
