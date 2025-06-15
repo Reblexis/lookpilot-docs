@@ -23,7 +23,7 @@ We welcome community contributions! Here's how you can help improve LookPilot do
 1. **Fork this repository**
 2. **Create a new directory** under `docs/game-docs/your-game-name/`
 3. **Add required files**:
-   - `manifest.json` - Game metadata (name, category, platforms, etc.)
+   - `manifest.json` - Game metadata (name)
    - `windows.md` and/or `linux.md` - Platform-specific guides
 4. **Follow the guide structure**:
    - LookPilot Configuration section
