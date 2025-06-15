@@ -25,11 +25,7 @@ We welcome community contributions! Here's how you can help improve LookPilot do
 3. **Add required files**:
    - `manifest.json` - Game metadata (name)
    - `windows.md` and/or `linux.md` - Platform-specific guides
-4. **Follow the guide structure**:
-   - LookPilot Configuration section
-   - Game Setup section
-   - Troubleshooting section
-5. **Submit a pull request**
+4. **Submit a pull request**
 
 ### Submit Issues
 
