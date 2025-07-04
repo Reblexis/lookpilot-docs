@@ -1,3 +1,4 @@
 {
-  "name": "Opentrack Setup"
+  "name": "Opentrack Setup",
+  "priority": 50
 }
