@@ -177,4 +177,4 @@ When using UDP protocol:
 - Check that the target application supports the data format
 - Verify network connectivity between devices (if using remote IP)
 
-For game-specific setup instructions, see the individual [game setup guides](../game-docs/). 
+For game-specific setup instructions, see the individual [game setup guides](https://lookpilot.app/game-guides). 

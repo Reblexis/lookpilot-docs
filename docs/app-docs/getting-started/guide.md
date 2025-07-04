@@ -68,15 +68,19 @@ For Proton protocols, you'll need to configure your Steam installation and selec
 3. You should see the 3D head visualization moving as you move your head
 4. If no camera is selected, you'll be prompted to select one
 
-### Step 6: Test in Game
+### Step 6: Configure in Game
 
 1. Launch your game
-2. Configure the game to accept head tracking input:
-   - For **FreeTrack**: Look for "FreeTrack" or "Head Tracking" options in game settings
+2. Check our [game guides](https://lookpilot.app/game-guides) to find your specific game setup guide
+3. If no guide exists for your game, look in the game's settings for:
+   - **FreeTrack** support
+   - **TrackIR** support 
+   - **Head tracking** options
+4. Configure the game to accept head tracking input:
+   - For **FreeTrack**: Enable FreeTrack or head tracking in game settings
    - For **SimConnect**: No additional setup needed in Microsoft Flight Simulator
    - For **OpenTrack**: Configure OpenTrack to receive UDP input on port 4242
-
-3. Test the head tracking by moving your head - you should see the camera move in game
+5. Test the head tracking by moving your head - you should see the camera move in game
 
 ### Step 7: Center Your View
 
@@ -116,4 +120,4 @@ Once basic tracking is working:
 - Press Center to reset the neutral position
 - Ensure stable lighting conditions
 
-For more detailed troubleshooting, see the [Troubleshooting](troubleshooting.md) guide. 
+For more detailed troubleshooting, see the [Troubleshooting](https://lookpilot.app/guides/app-troubleshooting.html) guide. 

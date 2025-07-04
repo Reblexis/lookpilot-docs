@@ -188,4 +188,4 @@ Press the "Center" button or use the keybind (default: Ctrl+Space) to set your c
 - Check that TrueView is configured correctly
 - Verify game-specific settings aren't also inverting controls
 
-For game-specific tracking recommendations, see the individual [game setup guides](../game-docs/). 
+For game-specific tracking recommendations, see the individual [game setup guides](https://lookpilot.app/game-guides). 

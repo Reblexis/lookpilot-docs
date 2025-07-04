@@ -115,4 +115,4 @@ Privacy settings control data collection, found in **Settings > Privacy**.
 - **Default**: Disabled
 - **Function**: Helps improve eye tracking models by sending anonymized gaze data
 
-For additional troubleshooting, see the [Troubleshooting](troubleshooting.md) guide. 
+For additional troubleshooting, see the [Troubleshooting](https://lookpilot.app/guides/app-troubleshooting.html) guide. 
