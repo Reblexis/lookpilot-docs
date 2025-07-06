@@ -3,4 +3,4 @@
 2. Click **Start** to begin tracking
 
 ## DCS World Steam Edition Setup
-Should work out of the box. 
+3. Go to **Adjust Controls** and press **Rescan Devices**
