@@ -1,4 +1,5 @@
-# Setting up LookPilot with DCS World Steam Edition (Linux)
+## Prerequisities
+Make sure to force the use of compatibility layer in Steam.
 
 ## LookPilot Configuration
 1. Set protocol to `freetrack (Proton)`
