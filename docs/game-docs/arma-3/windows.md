@@ -3,4 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## Arma 3 Setup
-Should work out of the box. 
+1. Go to `OPTIONS`
+2. Go to `CONTROLLER`
+3. Enable `TrackIR`
