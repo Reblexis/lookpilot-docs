@@ -10,3 +10,4 @@ Make sure to force the use of compatibility layer in Steam.
 
 ## DCS World Steam Edition Setup
 6. Go to **Adjust Controls** and press **Rescan Devices**
+
