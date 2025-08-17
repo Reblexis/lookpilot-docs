@@ -8,4 +8,4 @@
 
 ## Tips
 1. Set **Show helmet** to **No** in game settings
-2. Set **Helmet Look to Apex** to 0 in game settings.
+2. Set **Helmet Look to Apex** to 0 in game settings
