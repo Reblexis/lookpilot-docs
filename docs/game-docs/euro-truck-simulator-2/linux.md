@@ -1,7 +1,7 @@
 ## LookPilot Configuration
 1. Set protocol to `auto`
 2. Launch the game
-3. Select the Euro Truck Simulator 2 wine prefix in `Game's Wine prefix` dropdown
+3. Select the `Euro Truck Simulator 2`'s Wine prefix in `Game's Wine prefix` dropdown
 4. Click **Start tracking** to begin tracking and wait for about 10 seconds
 5. Click **Stop tracking**
 6. Restart the game
