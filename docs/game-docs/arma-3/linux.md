@@ -1,7 +1,7 @@
 ## LookPilot Configuration
 1. Set protocol to `auto`
 2. Launch the game
-3. Select the Arma 3 process in `Game process` dropdown
+3. Select the Arma 3 Wine prefix in the `Game's Wine prefix` dropdown
 4. Click **Start tracking** to begin tracking
 
 ### Fallback Option
