@@ -1,6 +1,4 @@
 ### LookPilot Configuration
-If the above method doesn't work, try using the freetrack (Proton) protocol:
-
 1. Set protocol to `freetrack (Wine)`
 2. Select your Steam installation from the dropdown
 3. Set Game to `Dirt Rally 2.0` in the game dropdown
