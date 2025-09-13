@@ -1,3 +1,4 @@
 {
-  "name": "X-Plane 12"
+  "name": "X-Plane 12",
+  "platforms": ["windows", "linux"]
 } 
