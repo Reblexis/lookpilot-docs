@@ -18,6 +18,7 @@ This guide covers common issues you might encounter with LookPilot and how to re
 **Linux-specific**:
 - Check camera permissions: Ensure your user has access to `/dev/video*` devices
 - Install v4l-utils: `sudo apt install v4l-utils` then check cameras with `v4l2-ctl --list-devices`
+- Make sure to use .deb version of Steam (flatpak and snap installations aren't supported) - https://store.steampowered.com/about/
 
 ## Tracking Issues
 
