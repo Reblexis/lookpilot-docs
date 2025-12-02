@@ -1,3 +1,10 @@
 {
-  "name": "Arma 3"
-} 
+  "name": "ARMA 3",
+  "number": 27,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V170",
+  "verified": null,
+  "by": null,
+  "international_id": "7503",
+  "ftn_id": "001BB69411ABD4E2B39900"
+}

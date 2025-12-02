@@ -1,3 +1,10 @@
 {
-  "name": "Project Wingman"
-} 
+  "name": "Project Wingman",
+  "number": 842,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "8185",
+  "ftn_id": "034A674065C99859032300"
+}

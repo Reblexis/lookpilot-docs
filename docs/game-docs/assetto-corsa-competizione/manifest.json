@@ -1,3 +1,10 @@
 {
-  "name": "Assetto Corsa Competizione"
-} 
+  "name": "Assetto Corsa Competizione",
+  "number": 834,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "8140",
+  "ftn_id": "0342E4E8A3BB50E1518200"
+}

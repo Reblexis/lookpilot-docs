@@ -1,3 +1,10 @@
 {
-  "name": "Elite Dangerous"
-} 
+  "name": "Elite Dangerous",
+  "number": 719,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V170",
+  "verified": null,
+  "by": null,
+  "international_id": "3475",
+  "ftn_id": "02CFA9485EECA12E18BE00"
+}

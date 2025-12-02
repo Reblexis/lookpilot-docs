@@ -1,3 +1,10 @@
 {
-  "name": "Microsoft Flight Simulator X: Steam Edition"
-} 
+  "name": "Microsoft Flight Simulator X: Steam Edition",
+  "number": 552,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "3852",
+  "ftn_id": "02287F45F0FFBEF6102900"
+}

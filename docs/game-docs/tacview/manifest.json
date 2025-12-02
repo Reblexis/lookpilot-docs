@@ -1,3 +1,10 @@
 {
-  "name": "Tacview"
-} 
+  "name": "Tacview",
+  "number": 539,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20865",
+  "ftn_id": "021B1F0CFB651B91405C00"
+}

@@ -1,3 +1,10 @@
 {
-  "name": "DCS World"
-} 
+  "name": "DCS World",
+  "number": 88,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V170",
+  "verified": true,
+  "by": "EmBeES",
+  "international_id": "1006",
+  "ftn_id": "0058F688FC9B0556868F00"
+}

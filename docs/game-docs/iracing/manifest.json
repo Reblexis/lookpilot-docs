@@ -1,3 +1,10 @@
 {
-  "name": "iRacing"
-} 
+  "name": "iRacing",
+  "number": 192,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": true,
+  "by": "vn88holden ",
+  "international_id": "14101",
+  "ftn_id": "00C0103AF1AA730A236900"
+}

@@ -1,3 +1,10 @@
 {
-  "name": "Project CARS 2"
-} 
+  "name": "Project CARS 2",
+  "number": 738,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V170",
+  "verified": null,
+  "by": null,
+  "international_id": "2826",
+  "ftn_id": "02E2AB6E1B550780B04800"
+}

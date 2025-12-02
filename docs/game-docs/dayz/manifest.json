@@ -1,3 +1,10 @@
 {
-  "name": "DayZ"
-} 
+  "name": "DayZ",
+  "number": 805,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "8135",
+  "ftn_id": "0325AF804AA8E17DB87600"
+}

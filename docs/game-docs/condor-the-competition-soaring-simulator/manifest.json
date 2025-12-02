@@ -1,0 +1,10 @@
+{
+  "name": "Condor: The Competition Soaring Simulator",
+  "number": 70,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": true,
+  "by": "MicheleF",
+  "international_id": "5901",
+  "ftn_id": "004670A8B762DA623A1300"
+}
