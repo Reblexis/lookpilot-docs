@@ -7,5 +7,5 @@ Should work out of the box.
 
 ## Common issues
 ### Game not reacting to tracking input even though the tracking is running
-1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *..\Documents\American Truck Simulator\config.cfg*.
+1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *../Documents/American Truck Simulator/config.cfg*.
 
