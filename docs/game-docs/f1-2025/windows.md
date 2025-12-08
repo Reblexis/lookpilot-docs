@@ -3,4 +3,4 @@
 2. Click **Start** to begin tracking
 
 ## F1 2025 Setup
-1. Make sure to launch the game in VR mode.
+Should work out of the box. 
