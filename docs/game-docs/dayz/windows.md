@@ -3,4 +3,4 @@
 2. Click **Start** to begin tracking
 
 ## DayZ Setup
-Should work out of the box. 
+Head tracking works automatically with no in-game configuration required. Just ensure LookPilot is running before launching the game. 
