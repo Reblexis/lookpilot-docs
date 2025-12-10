@@ -3,6 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## MSFS 2020 Setup
-Should work out of the box.
+Head tracking should work out of the box with no additional configuration required. The simulator automatically detects TrackIR/Freetrack-compatible head tracking devices.
 
 
