@@ -1,0 +1,9 @@
+## LookPilot Configuration
+1. Set protocol to `freetrack`
+2. Click **Start** to begin tracking
+
+## Arma 2 Setup
+1. Go to `OPTIONS`
+2. Go to `CONTROLLER`
+3. Enable `TrackIR`
+
