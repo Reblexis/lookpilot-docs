@@ -3,4 +3,4 @@
 2. Click **Start** to begin tracking
 
 ## Microsoft Flight Simulator 2024 Setup
-Should work out of the box. 
+Head tracking works automatically with no additional configuration required. The simulator detects TrackIR/Freetrack-compatible head tracking devices automatically. 
