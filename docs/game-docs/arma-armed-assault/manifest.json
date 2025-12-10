@@ -1,10 +1,3 @@
 {
-  "name": "ARMA: Armed Assault",
-  "number": 24,
-  "game_protocol": "FreeTrack20",
-  "supported_since": "V160",
-  "verified": true,
-  "by": "EmBeES",
-  "international_id": "10601",
-  "ftn_id": "0018F2F27A57631A40F200"
+  "name": "Arma: Armed Assault"
 }

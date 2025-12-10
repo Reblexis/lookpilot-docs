@@ -1,10 +1,3 @@
 {
-  "name": "Combat Air Patrol 2: Military Flight Simulator",
-  "number": 569,
-  "game_protocol": "FreeTrack20",
-  "supported_since": "V160",
-  "verified": null,
-  "by": null,
-  "international_id": "4425",
-  "ftn_id": "02399AAA88F5062AB14500"
+  "name": "Combat Air Patrol 2"
 }
