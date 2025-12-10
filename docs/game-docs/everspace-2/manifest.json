@@ -1,3 +1,10 @@
 {
-  "name": "EVERSPACE 2"
-} 
+  "name": "EVERSPACE 2",
+  "number": 860,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "4076",
+  "ftn_id": "035C221257068D1F149300"
+}

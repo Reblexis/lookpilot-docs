@@ -1,0 +1,10 @@
+{
+  "name": "BAE Systems HILAS cockpit",
+  "number": 34,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20019",
+  "ftn_id": "00220D9C887FD88E98B300"
+}

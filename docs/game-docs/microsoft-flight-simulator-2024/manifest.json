@@ -1,3 +1,10 @@
 {
-  "name": "Microsoft Flight Simulator 2024"
-} 
+  "name": "Microsoft Flight Simulator 2024",
+  "number": 869,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "8151",
+  "ftn_id": "0365965F5BA1AE0E41F600"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "RTT DeltaGen Plugin",
+  "number": 331,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20195",
+  "ftn_id": "014B90B5871B8DDD7D3400"
+}

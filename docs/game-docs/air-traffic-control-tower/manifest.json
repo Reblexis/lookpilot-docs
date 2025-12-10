@@ -1,0 +1,10 @@
+{
+  "name": "Air Traffic Control Tower",
+  "number": 16,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "3601",
+  "ftn_id": "0010432C28637A8EF97400"
+}

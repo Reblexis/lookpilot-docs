@@ -1,0 +1,10 @@
+{
+  "name": "RTMS Crane Sim",
+  "number": 330,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20400",
+  "ftn_id": "014AC93272841D91205200"
+}

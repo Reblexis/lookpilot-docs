@@ -1,0 +1,10 @@
+{
+  "name": "OMSI - The Bus Simulator",
+  "number": 263,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": true,
+  "by": "Thiago ",
+  "international_id": "2225",
+  "ftn_id": "0107F47CC37861A9606600"
+}

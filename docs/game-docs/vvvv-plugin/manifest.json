@@ -1,0 +1,10 @@
+{
+  "name": "VVVV Plugin",
+  "number": 440,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20075",
+  "ftn_id": "01B8B1C6648A138C205500"
+}

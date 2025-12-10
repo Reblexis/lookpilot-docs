@@ -1,0 +1,10 @@
+{
+  "name": "Rockwell Collins",
+  "number": 656,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20955",
+  "ftn_id": "029055E16470D5A560EA00"
+}

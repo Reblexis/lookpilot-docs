@@ -1,0 +1,10 @@
+{
+  "name": "X-Plane 6DOF Plugin",
+  "number": 460,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "10101",
+  "ftn_id": "01CCA15F28AF7963596300"
+}

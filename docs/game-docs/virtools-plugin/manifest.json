@@ -1,0 +1,10 @@
+{
+  "name": "Virtools Plugin",
+  "number": 430,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "20200",
+  "ftn_id": "01AE03FB9B23AB43A42900"
+}

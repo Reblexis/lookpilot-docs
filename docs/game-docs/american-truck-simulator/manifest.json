@@ -1,3 +1,10 @@
 {
-  "name": "American Truck Simulator"
-} 
+  "name": "American Truck Simulator",
+  "number": 579,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "13603",
+  "ftn_id": "0243F6F5140400655ED300"
+}

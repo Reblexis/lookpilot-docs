@@ -1,3 +1,10 @@
 {
-  "name": "Star Citizen"
-} 
+  "name": "Star Citizen",
+  "number": 717,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V170",
+  "verified": null,
+  "by": null,
+  "international_id": "3450",
+  "ftn_id": "02CDF4CE4E343EC6B4A200"
+}

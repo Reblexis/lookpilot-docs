@@ -1,3 +1,10 @@
 {
-  "name": "Star Wars: Squadrons"
-} 
+  "name": "Star Wars: Squadrons",
+  "number": 845,
+  "game_protocol": "FreeTrack20",
+  "supported_since": "V160",
+  "verified": null,
+  "by": null,
+  "international_id": "8175",
+  "ftn_id": "034D4C65426F7385BC9300"
+}
