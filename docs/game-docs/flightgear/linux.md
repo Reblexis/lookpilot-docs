@@ -5,3 +5,4 @@
 ## FlightGear Setup
 FlightGear has native Linux support and works automatically with built-in TrackIR/Freetrack support. No additional configuration required.
 
+

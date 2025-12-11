@@ -5,9 +5,9 @@
 4. Click **Start tracking** to begin tracking
 
 ### Fallback Option
-If the above method doesn't work, try using the freetrack (Proton) protocol:
+If the above method doesn't work, try using the freetrack (Wine) protocol:
 
-1. Set protocol to `freetrack (Proton)`
+1. Set protocol to `freetrack (Wine)`
 2. Select your Steam installation from the dropdown
 3. Set Game to `Arma Reforger` in the game dropdown
 4. Launch the game from Steam
@@ -16,4 +16,5 @@ If the above method doesn't work, try using the freetrack (Proton) protocol:
 ## Arma Reforger Setup
 1. If launching the game from Steam, make sure to force the use of specific compatibility tool (Proton)
 2. Head tracking works automatically with native TrackIR support
+
 

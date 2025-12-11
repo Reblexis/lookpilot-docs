@@ -23,7 +23,7 @@ Before setting up head tracking for Motor Town: Behind the Wheel, you need to co
 
 ### Fallback Option
 
-If the above method doesn't work, try using the freetrack (Proton) protocol:
+If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 1. Set protocol to `freetrack (wine)`
 2. Select your Steam installation from the dropdown

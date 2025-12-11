@@ -5,3 +5,4 @@
 ## FlightGear Setup
 Head tracking works automatically with built-in TrackIR/Freetrack support. No additional configuration required.
 
+

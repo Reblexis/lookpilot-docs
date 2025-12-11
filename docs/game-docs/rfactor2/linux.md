@@ -1,5 +1,5 @@
 ## LookPilot Configuration
-1. Set protocol to `auto` or `freetrack (Proton)`
+1. Set protocol to `auto` or `freetrack (Wine)`
 2. Launch the game
 3. Select the `rfactor2` process
 4. Click **Start tracking**

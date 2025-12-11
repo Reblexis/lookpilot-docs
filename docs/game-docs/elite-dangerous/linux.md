@@ -8,7 +8,7 @@
 7. Click **Start tracking**
 
 ### Fallback Option
-If the above method doesn't work, try using the freetrack (Proton) protocol:
+If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 1. Set protocol to `freetrack (wine)`
 2. Select your Steam installation from the dropdown
