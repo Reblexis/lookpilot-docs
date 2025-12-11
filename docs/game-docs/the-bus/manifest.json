@@ -1,10 +1,3 @@
 {
-  "name": "The Bus",
-  "number": 875,
-  "game_protocol": "FreeTrack20",
-  "supported_since": "V160",
-  "verified": null,
-  "by": null,
-  "international_id": "8205",
-  "ftn_id": "036B8B78E36572E0463400"
+  "name": "The Bus"
 }

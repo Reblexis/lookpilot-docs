@@ -2,5 +2,5 @@
 1. Set protocol to `freetrack`
 2. Click **Start** to begin tracking
 
-## Everspace 2 Setup
+## Nuclear Option Setup
 Once LookPilot is running, launch the game and head tracking should work automatically. If not, check the game's control/camera settings for TrackIR or head tracking options.
