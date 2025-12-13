@@ -14,11 +14,9 @@ This guide covers common issues you might encounter with LookPilot and how to re
 3. **Close other applications**: Make sure no other software is using the camera (browsers, video chat apps, etc.)
 4. **Try different USB ports**: Switch to a different USB port, preferably USB 3.0
 5. **Restart LookPilot**: Close and reopen the application
-
-**Linux-specific**:
-- Check camera permissions: Ensure your user has access to `/dev/video*` devices
-- Install v4l-utils: `sudo apt install v4l-utils` then check cameras with `v4l2-ctl --list-devices`
-- Make sure to use .deb version of Steam (Flatpak, Snap or any other containerized installations aren't supported) - https://store.steampowered.com/about/
+6. **Check camera permissions**: Ensure your user has access to `/dev/video*` devices
+7. **Install v4l-utils**: `sudo apt install v4l-utils` then check cameras with `v4l2-ctl --list-devices`
+8. **Use .deb Steam version**: Make sure to use .deb version of Steam (Flatpak, Snap or any other containerized installations aren't supported) - https://store.steampowered.com/about/
 
 ## Tracking Issues
 
@@ -71,15 +69,9 @@ This guide covers common issues you might encounter with LookPilot and how to re
 3. **Enable in game**: Look for head tracking options in the game's settings menu
 4. **Restart game**: Close and reopen the game after starting LookPilot tracking
 5. **Try different protocol**: If available, test with a different communication protocol
-
-**Windows-specific**:
-- **Run as administrator**: Try running both LookPilot and the game as administrator
-- **Check Windows firewall**: Ensure firewall isn't blocking communication
-
-**Linux-specific**:
-- **Check Proton setup**: For Proton games, verify Steam installation and game selection are correct
-- **Verify game launched**: Ensure the target game has been launched at least once through Steam
-- **Check Steam running**: Make sure Steam is running and logged in
+6. **Check Proton setup**: For Proton games, verify Steam installation and game selection are correct
+7. **Verify game launched**: Ensure the target game has been launched at least once through Steam
+8. **Check Steam running**: Make sure Steam is running and logged in
 
 ### UDP Protocol Issues
 
@@ -92,7 +84,7 @@ This guide covers common issues you might encounter with LookPilot and how to re
 4. **Check firewall**: Verify firewall isn't blocking UDP traffic on the specified port
 5. **Try different port**: Test with a different port number if the current one is in use
 
-### Proton Issues (Linux)
+### Proton Issues
 
 **Symptoms**: Proton protocols fail to start or games don't detect tracking
 
@@ -103,6 +95,19 @@ This guide covers common issues you might encounter with LookPilot and how to re
 4. **Steam running**: Make sure Steam is running and you're logged in
 5. **Verify game in library**: Confirm the game is actually in your Steam library
 6. **Browse for Steam**: Manually browse to your Steam installation if auto-detection fails
+
+## Keybind Issues
+
+### Keybinds Not Working
+
+**Symptoms**: Preset keybinds or system keybinds don't respond when pressed
+
+**Solutions**:
+1. **Wayland limitation**: Keybinds may not work when using Wayland display server
+2. **Check other applications**: Verify another application isn't capturing the key combination
+3. **Try different keys**: Use a different key combination
+4. **Restart LookPilot**: Close and reopen the application to re-register keybinds
+5. **Verify keybind is set**: Check that the keybind is actually configured in the preset options
 
 ## Performance Issues
 
@@ -119,4 +124,5 @@ This guide covers common issues you might encounter with LookPilot and how to re
 
 ---
 
-If your issue isn't listed here, please contact support@lookpilot.app 
+If your issue isn't listed here, please contact support@lookpilot.app
+
