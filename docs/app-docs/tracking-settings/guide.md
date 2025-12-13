@@ -1,191 +1,153 @@
-# Tracking Settings
+## Where to Find Tracking Settings
 
-This guide explains all the tracking settings in LookPilot, including head tracking, eye tracking, and how to fine-tune them for the best experience.
+Click the **Settings** button (gear icon) in the output pose visualization in the Gaming tab to open the Tracking settings window.
 
-## Head Tracking
+## Window Structure
 
-Head tracking uses your webcam to track the movement and rotation of your head, translating this into camera movement in games.
+The Tracking settings window contains multiple tabs:
 
-### Head Tracking Axes
+- **General**: Protocol settings, visualizations, axis toggles, and global settings
+- Individual axis tabs (Yaw, Pitch, Roll, X, Y, Z for head; Yaw, Pitch for eye) - only visible when that axis is enabled
 
-You can enable or disable individual axes of head movement:
+## General Tab
 
-#### Rotation Axes
-- **Yaw**: Left and right head movement (looking left/right)
-- **Pitch**: Up and down head movement (looking up/down) 
-- **Roll**: Head tilting side to side
+The General tab contains protocol settings at the top, followed by visualizations and global tracking controls.
 
-#### Translation Axes  
-- **X**: Left and right head movement (leaning left/right)
-- **Y**: Up and down head movement (leaning up/down)
-- **Z**: Forward and backward head movement (leaning forward/back)
+### Protocol Settings
 
-**Recommendations**:
-- **Always enable**: Yaw and Pitch (essential for natural looking around)
-- **Usually enable**: Roll (adds immersion for aircraft/vehicles)
-- **Optional**: X, Y, Z translation (can be useful for cockpit games but may feel unnatural in some games)
+**Protocol**: Select the communication protocol to send tracking data to the game. See the [Connect to Any Game](https://lookpilot.app/guides/connect-to-any-game) guide for details on protocols and their settings.
 
-### Head Tracking Settings
+### Visualizations
 
-#### Smoothness (0.0 - 1.0)
-Controls how much filtering is applied to reduce jitter in the tracking data.
+Two side-by-side 3D visualizations show:
+- **Input visualization** (left): Tracking data after smoothing and centering, but before mapping curves are applied
+- **Output visualization** (right): Final output after mapping curves are applied
 
-- **Lower values (0.0 - 0.3)**: More responsive but potentially jittery
-- **Higher values (0.4 - 1.0)**: Smoother but with more latency
-- **Recommended**: 0.3 for most users
-- **Adjust if**: You experience jitter (increase) or too much lag (decrease)
+### Axis Toggles
 
-#### Deadzone (0.0 - 1.0)  
-Sets a central area where small movements are ignored to prevent drift.
+Enable or disable individual tracking axes. Each enabled axis gets its own tab for detailed configuration.
 
-- **Lower values (0.0 - 0.1)**: More sensitive but may drift when stationary
-- **Higher values (0.2 - 0.5)**: Less sensitive but more stable when still
-- **Recommended**: 0.1 for most users
-- **Adjust if**: You experience drift when sitting still (increase) or tracking feels unresponsive (decrease)
+**Head axes**:
+- **Yaw**: Left/right head rotation - Essential for all games
+- **Pitch**: Up/down head rotation - Essential for all games
+- **Roll**: Head tilting left/right - Adds immersion, particularly in flight/racing
+- **X**: Left/right head movement (leaning) - Useful in cockpit games for looking around panels
+- **Y**: Up/down head movement (leaning) - Useful in cockpit games
+- **Z**: Forward/backward head movement (leaning) - Useful in cockpit games for reading instruments
 
-#### Mapping
-Advanced response curve configuration for each axis. Click "Mapping" in the head tracking settings to open the mapping editor.
+**Eye axes**:
+- **Yaw**: Left/right eye movement - Adds precision for target acquisition
+- **Pitch**: Up/down eye movement - Adds precision for target acquisition
 
-- **Linear mapping**: Output matches input directly (default)
-- **Custom curves**: Create non-linear responses for different feel
-- **Asymmetric mapping**: Different curves for positive and negative movement
-- **Axis inversion**: Flip the direction of an axis
+### Global Settings
 
-## Eye Tracking
+These settings apply to all axes as a base value:
 
-Eye tracking adds an additional layer of control by tracking where you're looking and blending it with head movement.
+**Rotation sensitivity** (0.1 - 5.0): Global sensitivity multiplier for rotation axes (Yaw, Pitch, Roll) for both head and eye tracking. Increase for larger displays or if you prefer smaller head movements.
 
-### Eye Tracking Axes
+**Movement sensitivity** (0.1 - 5.0): Global sensitivity multiplier for movement axes (X, Y, Z) for head tracking. Adjust based on how much physical leaning you want to translate to in-game movement.
 
-- **Yaw**: Horizontal eye movement (looking left/right with your eyes)
-- **Pitch**: Vertical eye movement (looking up/down with your eyes)
+**Smoothness** (0.0 - 3.0): Global smoothing amount applied to both head and eye tracking. Higher values reduce jitter but add latency. Increase if tracking feels jittery, decrease if it feels sluggish.
 
-Note: Eye tracking only supports rotation axes, not translation.
+**Deadzone** (0.0 - 3.0): Global deadzone amount applied to both head and eye tracking. Creates a zone where small movements are ignored, preventing drift when sitting still. Increase if camera drifts, decrease if tracking feels unresponsive.
 
-### Eye Tracking Settings
+**Confidence threshold** (0.0 - 1.0): Minimum tracking confidence score required before the tracking search region resets. Lower values allow tracking in poor lighting or with lower quality cameras but may be less accurate. Increase for more stable tracking in good conditions.
 
-#### Smoothness (0.0 - 1.0)
-Same concept as head tracking smoothness but for eye movements.
+**TrueView**: Maintains physical movement directions relative to your current view orientation, even when using non-linear rotation mapping curves. Keep enabled unless you prefer traditional head tracking behavior.
 
-- **Default**: 0.75 (higher than head tracking due to rapid eye movements)
-- **Recommended range**: 0.6 - 0.9
-- **Adjust if**: Eye tracking feels too jittery (increase) or laggy (decrease)
+## Individual Axis Tabs
 
-#### Deadzone (0.0 - 1.0)
-Central area where small eye movements are ignored.
+Each enabled axis has its own tab with axis-specific controls. These tabs only appear when the axis is enabled in the General tab.
 
-- **Default**: 0.2 (higher than head tracking due to natural eye micro-movements)  
-- **Recommended range**: 0.1 - 0.3
-- **Adjust if**: Eyes feel too sensitive (increase) or unresponsive (decrease)
+### Visualization
 
-### Eye Tracking Influence (0.0 - 1.0)
-Controls how much eye tracking affects the final camera movement.
+Shows real-time input and output for this specific axis, helping you see the effect of your settings.
 
-- **0.0**: Pure head tracking (eye tracking disabled)
-- **0.5**: 50% head tracking, 50% eye tracking
-- **1.0**: Pure eye tracking (head tracking disabled for rotation)
-- **Recommended**: 0.2 - 0.4 for most users
-- **Use cases**:
-  - **0.1 - 0.3**: Subtle eye tracking enhancement
-  - **0.4 - 0.6**: Balanced head and eye tracking
-  - **0.7 - 1.0**: Eye-dominant tracking (advanced users only)
+### Axis-Specific Settings
 
-## Advanced Features
+**Maps to** (Virtual joystick only): Select which joystick axis this tracking axis should control (Left Stick X/Y, Right Stick X/Y, Triggers, or None). A red indicator appears if multiple tracking axes map to the same joystick axis.
 
-### TrueView
-When enabled, movement directions stay relative to your view orientation even after rotation mapping.
+**Sensitivity** (0.1 - 5.0): Per-axis sensitivity multiplier applied after the global rotation or movement sensitivity. Final sensitivity = Global sensitivity × Axis sensitivity. When changed, automatically scales the mapping curve heights proportionally, preserving the curve shape. Adjust individual axes if one feels too fast/slow relative to others.
 
-- **Enabled**: Natural movement regardless of in-game camera rotation
-- **Disabled**: Movement is always relative to the original orientation
-- **Recommended**: Enabled for most users
-- **Disable if**: You prefer traditional head tracking behavior
+**Offset** (-180 to 180 for rotation, -300 to 300 for movement, -1 to 1 for joystick): Adds a constant value to the final mapped output, shifting the neutral position. Useful if your camera is mounted off-center or you sit at an angle.
+
+**Max input**: Sets the maximum input range for the horizontal axis of the mapping curve. Higher values mean you need larger head movements to reach the curve's edge. Decrease if you have limited head mobility or prefer smaller movements.
+
+**Smoothness** (0.0 - 1.0): Per-axis smoothing multiplier. Final smoothness = Global smoothness × Axis smoothness. Adjust if one axis is jitterier than others (increase) or needs more responsiveness (decrease).
+
+**Deadzone** (0.0 - 1.0): Per-axis deadzone multiplier. Final deadzone = Global deadzone × Axis deadzone. Adjust if one axis drifts more than others (increase) or feels less responsive (decrease).
 
 ### Mapping Curves
 
-Click "Mapping" in either head or eye tracking settings to open the advanced curve editor.
+The mapping curve defines how input values (your head/eye movement) translate to output values (in-game camera movement). 
 
-#### Curve Types
-- **Linear**: Direct 1:1 mapping (default)
-- **Exponential**: Slow near center, fast at extremes
-- **Logarithmic**: Fast near center, slow at extremes
-- **S-Curve**: Slow at center and extremes, fast in middle
+**Positive curve**: Maps positive movements (right, up, forward, clockwise)
+**Negative curve**: Maps negative movements (left, down, backward, counterclockwise) - editable only when Asymmetric is enabled
 
-#### Curve Editing
-- **Left click**: Add or move control points
+#### Curve Controls
+
+**Inverted**: Flips the direction of the input axis (e.g., looking left moves camera right). Use if the game has inverted controls or you prefer reversed movement.
+
+**Asymmetric**: When enabled, the negative curve can be edited independently from the positive curve, allowing different response curves for each direction. Useful when you need different behavior in each direction (e.g., looking down vs up in flight sims).
+
+#### Editing Curves
+
+- **Left click**: Add or move control points on the curve
 - **Right click**: Remove control points
-- **Asymmetric**: Enable to create different curves for positive/negative movement
-- **Invert**: Flip the direction of the axis
+- The curve determines the response: steep = fast response, flat = slow response
+- Linear (straight diagonal) = 1:1 mapping
+- Exponential (curved up) = slow near center, fast at extremes  
+- Logarithmic (curved down) = fast near center, slow at extremes
 
 #### Common Curve Setups
-- **Precision aiming**: Slower response near center for fine control
-- **Fast scanning**: Faster response for quick camera movement
-- **Dead zone**: Flat area at center to prevent small movements
 
-### Centering
-Press the "Center" button or use the keybind (default: Ctrl+Space) to set your current position as the neutral center point.
+- **Default (Linear)**: Straight diagonal line, natural 1:1 response
+- **Precision mode**: Flatter near center for fine control, steeper at edges for quick turns
+- **Fast scanning**: Steeper curve throughout for quicker camera movement
+- **Reduced range**: Lower max output to limit how far the camera can turn
 
-**When to center**:
-- After adjusting your seating position
-- When starting a new gaming session
-- If tracking feels offset from where you're looking
-- After changing head tracking settings
+## How Settings Interact
 
-## Optimal Settings by Use Case
+The processing pipeline in order:
 
-### General Gaming
-- **Head**: Yaw ✓, Pitch ✓, Roll ✓, X/Y/Z ✗
-- **Smoothness**: 0.3 (head), 0.75 (eye)
-- **Deadzone**: 0.1 (head), 0.2 (eye)
-- **Eye Influence**: 0.0 - 0.2
+1. **Raw tracking input** from camera →
+2. **Smoothing & Deadzone** - applied before everything else →
+3. **Centering** - subtract center position/rotation set when you press Center →
+4. **Inversions** - flip axis direction if enabled →
+5. **Mapping curves & Sensitivity** - transform through spline (sensitivity scales curve heights proportionally) →
+6. **Offset** - constant added to final mapped output →
+7. **Combine head + eye** - simple addition of head and eye rotations →
+8. **TrueView** (if enabled) - rotates translation directions to match your current view orientation →
+9. **Send to game**
 
-### Flight Simulation
-- **Head**: All axes enabled
-- **Smoothness**: 0.2 - 0.4 (more responsive for precise control)
-- **Deadzone**: 0.05 - 0.1 (lower for precision)
-- **Eye Influence**: 0.1 - 0.3
+Key formula interactions:
+- **Final smoothness** = Global smoothness × Axis smoothness multiplier
+- **Final deadzone** = Global deadzone × Axis deadzone multiplier  
+- **Final sensitivity** = Global sensitivity (rotation/movement) × Axis sensitivity
+- **Combined rotation** = Head rotation (after mapping) + Eye rotation (after mapping)
 
-### Racing Games
-- **Head**: Yaw ✓, Pitch ✓, Roll ✓, X ✓ (lean into turns), Y/Z ✗
-- **Smoothness**: 0.4 - 0.5 (smoother for racing)
-- **Deadzone**: 0.1 - 0.15
-- **Eye Influence**: 0.0 - 0.1
+## Quick Start Recommendations
 
-### First-Person Shooters
-- **Head**: Yaw ✓, Pitch ✓, Roll ✗, X/Y/Z ✗
-- **Smoothness**: 0.2 - 0.3 (responsive for quick aiming)
-- **Deadzone**: 0.05 - 0.1 (low for precision)
-- **Eye Influence**: 0.2 - 0.4 (eye tracking useful for target acquisition)
+**General use**:
+- Enable: Yaw, Pitch for head; optionally Roll
+- Global smoothness: 0.3
+- Global deadzone: 0.1
+- Keep curves at default (linear)
+- Adjust per-axis sensitivity if specific axes feel too fast/slow
 
-## Troubleshooting
+**Flight simulation**:
+- Enable: All head axes (Yaw, Pitch, Roll, X, Y, Z)
+- Global smoothness: 0.2-0.4
+- Global deadzone: 0.05-0.1
+- Consider asymmetric curves for more precise control in specific directions
 
-### Tracking feels unresponsive
-- Decrease smoothness values
-- Decrease deadzone values
-- Check camera positioning and lighting
-- Ensure good contrast between your face and background
+**Racing**:
+- Enable: Yaw, Pitch, Roll, X for leaning into turns
+- Global smoothness: 0.4-0.5
+- Consider higher deadzone (0.15) for stability
 
-### Tracking is too jittery
-- Increase smoothness values
-- Improve lighting conditions
-- Stabilize camera mounting
-- Consider using a higher resolution
-
-### Tracking drifts over time
-- Increase deadzone values
-- Ensure consistent lighting
-- Check for reflections or background movement
-- Press Center to reset neutral position
-
-### Eye tracking not working well
-- Ensure good lighting on your face
-- Position camera at eye level
-- Increase eye tracking smoothness
-- Lower eye tracking influence
-- Consider that eye tracking works best with good quality cameras
-
-### Movements feel backwards
-- Use the "Invert" option in mapping settings for affected axes
-- Check that TrueView is configured correctly
-- Verify game-specific settings aren't also inverting controls
-
-For game-specific tracking recommendations, see the individual [game setup guides](https://lookpilot.app/game-guides). 
+**First-person shooters**:
+- Enable: Only Yaw and Pitch for head
+- Global smoothness: 0.2-0.3
+- Global deadzone: 0.05-0.1
+- Consider adding eye tracking (influence 0.2-0.4) for target acquisition
