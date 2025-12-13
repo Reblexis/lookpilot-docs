@@ -40,6 +40,22 @@ In issues, you can describe any problems that you have encountered using the gui
    - Screenshots if applicable
 4. **Submit the issue** and our team will review it
 
+### Adding Images
+
+Place images next to your `.md` file and use relative paths:
+
+```md
+![Screenshot](./image.png)
+```
+
+For subfolders:
+
+```md
+![Screenshot](./images/screenshot.png)
+```
+
+**Note:** Don't use absolute paths like `/docs/...` — use relative paths starting with `./`
+
 ### File Structure
 
 ```
