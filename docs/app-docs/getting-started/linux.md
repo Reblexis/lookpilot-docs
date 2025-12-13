@@ -1,5 +1,3 @@
-## Welcome to LookPilot
-
 **Welcome to LookPilot!** This short guide will help you start tracking and get into your first game.
 
 **⚠️ Important for Linux users:** If you have LookPilot installed via Steam, you must use the **.deb version of Steam** for LookPilot to work properly. Alternatively, you can install LookPilot standalone from [lookpilot.app/downloads](https://lookpilot.app/downloads).

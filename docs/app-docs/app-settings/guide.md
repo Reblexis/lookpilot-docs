@@ -1,118 +1,111 @@
-# App Settings
+This guide covers application settings in LookPilot. These settings affect how the application behaves and are separate from your tracking presets.
 
-This guide covers all the application settings in LookPilot, organized by category. These settings affect how the application behaves and are separate from your tracking presets.
+## Interface
 
-## Camera Settings
+Found in **Settings > Interface**.
 
-Camera settings configure your webcam and are found in **Settings > Camera**.
+### Language
+- Choose your preferred interface language
+- Restart required for changes to take effect
+
+## Camera
+
+Found in **Settings > Camera**.
 
 ### Camera Selection
 - **Select camera**: Choose from available webcams
-- **Reload button (⟲)**: Refresh the list of available cameras
-- **None selected**: Shows "No camera" until you select one
-
-### Camera Configuration
-- **Resolution**: Choose camera resolution (e.g., 1280x720, 1920x1080)
-  - Higher resolutions provide better tracking quality but use more system resources and may run at lower FPS
-  - 1280x720 is recommended for most setups
+- **Reload button (⟲)**: Refresh the camera list
+- **Resolution**: Choose camera resolution
+  - 1280x720 recommended for most setups
   - 640x480 for lower-end systems
-  - 1920x1080 for high-end systems with powerful computers (may reduce camera FPS)
+  - 1920x1080 for high-end systems (may reduce camera FPS)
+- **Mirror camera**: Flip the camera preview horizontally (doesn't affect tracking)
 
-- **Mirror camera**: Flip the camera preview horizontally
-  - Enable if you prefer the preview to match a mirror view
-  - Does not affect tracking quality, only preview appearance
-
-### Camera Tips
-- Position the camera at eye level for best tracking
+**Tips**:
+- Position camera at eye level for best tracking
 - Ensure good lighting on your face
-- Minimize background movement and reflections
-- USB 3.0 cameras generally provide better performance than USB 2.0
+- USB 3.0 cameras generally perform better than USB 2.0
 
-## Interface Settings
+## Tracking
 
-Interface settings control the application's appearance and behavior, found in **Settings > Interface**.
+Found in **Settings > Tracking**.
 
-### Language
-- **Application language**: Choose your preferred interface language
-- **Available languages**: Depends on community translations
-- **Restart required**: Language changes take effect after restarting LookPilot
+### Performance
 
-## Keybinds Settings
+**Tracking FPS limit**:
+- Range: 5-240 FPS
+- Default: 60 FPS
+- Lower values reduce CPU usage but may impact smoothness
+- Actual FPS also limited by your camera's capabilities
 
-Keybind settings configure global hotkeys, found in **Settings > Keybinds**.
+**Head tracking mode**:
+- **Static**: Single-frame prediction
+- **Temporal (experimental)**: Uses LSTM for smoother tracking
+
+### Hardware Acceleration (Windows only)
+
+**Use GPU acceleration**:
+- Offloads parts of the tracking pipeline to the GPU
+- Can significantly improve performance on most systems
+
+## Keybinds
+
+Found in **Settings > Keybinds**.
 
 ### System Keybinds
 
-#### Center Tracking
-- **Default**: Ctrl+Space
-- **Function**: Resets your current head position as the neutral center
-- **Usage**: Press when you're in your normal sitting position to recalibrate
+**Center Tracking**:
+- Default: Ctrl+Space
+- Resets your current head position as the neutral center
 
-#### Toggle Tracking  
-- **Default**: Not assigned
-- **Function**: Starts or stops head tracking
-- **Usage**: Quick way to enable/disable tracking without opening the interface
-
-
+**Toggle Tracking**:
+- Default: Not assigned
+- Starts or stops head tracking
 
 ### Setting Keybinds
 
-1. Click in the keybind field next to the action
+1. Click in the keybind field
 2. Press the desired key combination
-3. The keybind is automatically saved
-4. To clear a keybind, press the clear button (if available) or delete key
+3. Automatically saved
 
-### Keybind Guidelines
+**Good choices**: Combinations with Ctrl, Alt, or Shift (e.g., Ctrl+Space, Alt+F1)
 
-**Good keybind choices**:
-- Combinations with Ctrl, Alt, or Shift (e.g., Ctrl+Space, Alt+F1)
-- Function keys (F1-F12) if not used by games
-- Numeric keypad keys (if available)
+**Avoid**: Single letters/numbers that games use, common shortcuts (Ctrl+C, Alt+Tab)
 
-**Avoid**:
-- Single letters or numbers that games might use
-- Common shortcuts (Ctrl+C, Ctrl+V, Alt+Tab)
-- Keys that games commonly bind to important functions
+**Note**: Preset keybinds are configured in the preset management window, not here. See the Presets guide for details.
 
-### Preset Keybinds
+## Posture
 
-Individual preset keybinds are configured in the preset management window, not in the keybinds settings. See the [Presets](presets.md) guide for details.
+Found in **Settings > Posture** (if posture monitoring is enabled).
 
-## Performance Settings
+### Posture Monitoring
 
-Performance settings optimize LookPilot for your system, found in **Settings > Performance**.
+**Enable posture monitoring**:
+- Monitor your head position and show warnings when your posture needs adjustment
 
-### Tracking FPS Limit
-- **Range**: 5-240 FPS
-- **Default**: 20 FPS
-- **Lower values**: Reduce CPU usage but may impact smoothness
-- **Higher values**: Smoother tracking but use more system resources
-- **Function**: Limits the processing frequency of the tracking pipeline
-- **Note**: Actual tracking FPS is also limited by your camera's FPS capabilities
+**Warning threshold**:
+- Distance below center position that triggers a warning (in cm)
+- Higher values are more sensitive
 
-### GPU Acceleration
-- **Use GPU acceleration**: Enable hardware acceleration for processing
-- **Default**: Disabled (uses CPU processing)
-- **Function**: Offloads parts of the tracking pipeline to the GPU
-- **Benefits**: Can significantly improve performance on most systems
-- **Note**: GPU acceleration requirements and performance vary by system
+**Warning delay**:
+- How long to wait before showing a warning after bad posture is detected (in seconds)
 
-### Performance Tips
-- Close unnecessary applications while using LookPilot
-- Ensure adequate lighting to reduce processing requirements
-- Use appropriate camera resolution for your system capabilities
-- Monitor system temperature and performance during extended use
+### Current Status
 
-## Privacy Settings
+Displays your current head position and warning status.
 
-Privacy settings control data collection, found in **Settings > Privacy**.
+### Set Center Position
 
-### Send Usage Statistics
-- **Default**: Enabled
-- **Function**: Helps improve the app by sending anonymous usage data
+Use the "Set as center" button to set your current position as the reference for posture monitoring.
 
-### Send Gaze Data  
-- **Default**: Disabled
-- **Function**: Helps improve eye tracking models by sending anonymized gaze data
+## Privacy
 
-For additional troubleshooting, see the [Troubleshooting](https://lookpilot.app/guides/app-troubleshooting.html) guide. 
+Found in **Settings > Privacy**.
+
+**Send usage statistics**:
+- Default: Enabled
+- Helps improve the app by sending anonymous usage data
+
+**Send gaze data**:
+- Default: Disabled
+- Helps improve eye tracking models by sending anonymized gaze data

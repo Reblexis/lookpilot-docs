@@ -1,5 +1,3 @@
-# Troubleshooting
-
 This guide covers common issues you might encounter with LookPilot and how to resolve them.
 
 ## Camera Issues

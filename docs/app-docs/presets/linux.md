@@ -1,5 +1,3 @@
-# Presets
-
 Presets are saved configurations that store all your tracking and communication settings in one place. They allow you to quickly switch between different setups for different games or use cases.
 
 ## Types of Presets
