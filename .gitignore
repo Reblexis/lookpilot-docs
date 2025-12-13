@@ -5,6 +5,7 @@
 
 # Production
 /build
+./head-eye-tracker/
 
 # Generated files
 .docusaurus
