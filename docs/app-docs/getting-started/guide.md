@@ -1,5 +1,3 @@
-# Getting Started
-
 ## Welcome to LookPilot
 
 **Welcome to LookPilot!** This short guide will help you start tracking and get into your first game.
