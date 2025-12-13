@@ -36,8 +36,16 @@ If the auto method doesn't work and you're playing a non-Steam game:
 
 1. Set protocol to `freetrack (Wine)`
 2. Set launcher to `Other`
-3. Select the game's Wine prefix path
-4. Select the game's Wine executable path
+3. Select the game's Wine prefix path:
+   - **Default Wine**: `~/.wine`
+   - **Lutris**: Right-click the game → Configure → Runner options → Wine prefix field, or typically `~/.local/share/lutris/runners/wine/<game-name>`
+   - **Heroic Games Launcher**: Check game settings → Wine/Proton prefix, typically `~/Games/Heroic/Prefixes/<game-name>`
+   - **Bottles**: Bottles Manager → Select bottle → Bottle path shown in details
+   - **Custom installations**: Look for a directory containing `drive_c` folder
+4. Select the game's Wine executable path:
+   - **System Wine**: `/usr/bin/wine` or just `wine`
+   - **Lutris Wine**: `~/.local/share/lutris/runners/wine/<version>/bin/wine`
+   - **Wine-GE/Proton-GE**: Check your launcher's runner settings for the full path (e.g., `/home/user/.local/share/lutris/runners/wine/wine-ge-8-26/bin/wine`)
 5. Launch the game
 6. Click **Start tracking** and wait for about 10 seconds
 7. Click **Stop tracking**
@@ -67,13 +75,13 @@ The status indicator will be green if the virtual joystick is initialized and ru
 
 ## 3. Mouse Emulation
 
-Use this method for games that only support mouse input for camera control. This requires routing through OpenTrack.
+Use this method for games that only support mouse input for camera control. This requires routing through opentrack.
 
 ### Setup
-1. Follow the [OpenTrack setup guide](../opentrack-setup/guide.md) to connect LookPilot to OpenTrack
-2. In OpenTrack, set the output to mouse emulation
-3. Configure mouse sensitivity in OpenTrack as needed
+1. Follow the [opentrack setup guide](../opentrack-setup/guide.md) to connect LookPilot to opentrack
+2. In opentrack, set the output to mouse emulation
+3. Configure mouse sensitivity in opentrack as needed
 
 ### Status Indicator
-The status indicator will be green if data is being sent to OpenTrack (note: this doesn't confirm OpenTrack is receiving the data).
+The status indicator will be green if data is being sent to opentrack (note: this doesn't confirm opentrack is receiving the data).
 

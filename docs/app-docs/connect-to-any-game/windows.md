@@ -39,13 +39,13 @@ The status indicator will be green if the virtual joystick is initialized and ru
 
 ## 3. Mouse Emulation
 
-Use this method for games that only support mouse input for camera control. This requires routing through OpenTrack.
+Use this method for games that only support mouse input for camera control. This requires routing through opentrack.
 
 ### Setup
-1. Follow the [OpenTrack setup guide](../opentrack-setup/guide.md) to connect LookPilot to OpenTrack
-2. In OpenTrack, set the output to mouse emulation
-3. Configure mouse sensitivity in OpenTrack as needed
+1. Follow the [opentrack setup guide](../opentrack-setup/guide.md) to connect LookPilot to opentrack
+2. In opentrack, set the output to mouse emulation
+3. Configure mouse sensitivity in opentrack as needed
 
 ### Status Indicator
-The status indicator will be green if data is being sent to OpenTrack (note: this doesn't confirm OpenTrack is receiving the data).
+The status indicator will be green if data is being sent to opentrack (note: this doesn't confirm opentrack is receiving the data).
 
