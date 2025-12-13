@@ -55,3 +55,4 @@ In the **Tracking settings** window, you can adjust all kinds of settings to cus
 That should be enough to get you started! For more detailed information or help, click the **Help** button to open more comprehensive guides. You can also join our [**Discord community**](https://discord.gg/RbhTxhFnCF) to get help, share feedback, report bugs, or just chat with other users. Welcome to LookPilot!
 
 ![Additional info](./additional_info.png)
+
