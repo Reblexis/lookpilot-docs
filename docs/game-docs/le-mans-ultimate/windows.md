@@ -3,5 +3,5 @@
 2. Click **Start** to begin tracking
 
 ## Le Mans Ultimate Setup
-Head tracking works automatically with no additional configuration required. The game detects TrackIR/Freetrack-compatible devices automatically.
+Head tracking should work automatically as the game detects TrackIR/Freetrack-compatible devices. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 

@@ -15,6 +15,6 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 ## Arma Reforger Setup
 1. If launching the game from Steam, make sure to force the use of specific compatibility tool (Proton)
-2. Head tracking works automatically with native TrackIR support
+2. Head tracking should work automatically with native TrackIR support
 
 

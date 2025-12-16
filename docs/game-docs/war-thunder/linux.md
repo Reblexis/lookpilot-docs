@@ -1,5 +1,5 @@
 ## LookPilot Configuration
-1. Set protocol to `virtual joystick output`
+1. Set protocol to `virtual joystick`
 2. Launch the game
 3. Click **Start tracking** to begin tracking
 

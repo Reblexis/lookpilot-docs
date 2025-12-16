@@ -19,7 +19,7 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 7. Click **Start tracking**
 
 ## Automobilista Setup
-Once LookPilot is running, launch the game and head tracking should work automatically.
+Once LookPilot is running, launch the game and head tracking should work automatically. If not, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 
 ## Troubleshooting
 If head tracking is not working, try using a higher Proton version. Proton 3.7 is known not to work with this game. Proton 10 has been tested and confirmed to work.

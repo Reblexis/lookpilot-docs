@@ -3,6 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## FlightGear Setup
-Head tracking works automatically with built-in TrackIR/Freetrack support. No additional configuration required.
+Head tracking should work automatically with built-in TrackIR/Freetrack support. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 
 

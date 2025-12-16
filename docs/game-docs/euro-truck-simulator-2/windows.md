@@ -3,7 +3,7 @@
 2. Click **Start** to begin tracking
 
 ## Euro Truck Simulator 2 Setup
-Should work out of the box. 
+Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled. 
 
 ## Common issues
 ### Game not reacting to tracking input even though the tracking is running

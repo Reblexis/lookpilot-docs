@@ -20,5 +20,5 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 8. Click **Start tracking**
 
 ## Aerofly FS 2 Setup
-Head tracking should work out of the box.
+Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 

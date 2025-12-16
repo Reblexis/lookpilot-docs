@@ -3,6 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## Falcon BMS Setup
-Head tracking works automatically with native TrackIR/Freetrack support. No additional configuration required.
+Head tracking should work automatically with native TrackIR/Freetrack support. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 
 

@@ -3,5 +3,5 @@
 2. Click **Start** to begin tracking
 
 ## Falcon 4.0: Allied Force Setup
-Head tracking should work out of the box.
+Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
 
