@@ -14,11 +14,25 @@ Most users don't need opentrack. LookPilot works directly with games through Fre
 
 ## Installation
 
-For Linux users, we recommend using the Star Citizen-optimized fork which includes important compatibility fixes for Wine/Proton games and proper build instructions:
+For Linux users, we recommend using the Star Citizen-optimized fork which includes important compatibility fixes for Wine/Proton games:
 
-[**opentrack-StarCitizen**](https://github.com/Priton-CE/opentrack-StarCitizen) - Fork with improved compatibility for UMU-enabled launchers (like Lutris) and custom Proton prefixes, plus clear step-by-step build instructions.
+[**opentrack-StarCitizen**](https://github.com/Priton-CE/opentrack-StarCitizen) - Fork with improved compatibility for UMU-enabled launchers (like Lutris) and custom Proton prefixes.
 
-Follow the build instructions in the repository to compile from source.
+### Build from source
+
+```bash
+git clone https://github.com/Priton-CE/opentrack-StarCitizen.git
+cd opentrack-StarCitizen
+git checkout wine-extended-proton
+mkdir build
+cd build
+cmake ..
+ccmake ..  # Enable SDK_WINE in the interface
+make
+sudo make install
+```
+
+**Note:** When running `ccmake ..`, use the interface to enable the `SDK_WINE` option before proceeding with `make`.
 
 ## How to set it up with LookPilot
 
