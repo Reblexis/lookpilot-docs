@@ -40,6 +40,9 @@ If the auto method doesn't work and you're playing a non-Steam game:
    - **Default Wine**: `~/.wine`
    - **Lutris**: Right-click the game → Configure → Runner options → Wine prefix field, or typically `~/.local/share/lutris/runners/wine/<game-name>`
    - **Heroic Games Launcher**: Check game settings → Wine/Proton prefix, typically `~/Games/Heroic/Prefixes/<game-name>`
+     
+     > **Important for Heroic Launcher users:** UMU (Unified Launcher for Windows Games on Linux) is a compatibility tool that can interfere with LookPilot's connection. Before launching your game, open the game's settings in Heroic, go to the **Advanced** tab, and **disable UMU**. If you've previously launched the game with UMU enabled, you'll need to delete the game's prefix folder (either manually from the file system or by resetting it through Heroic's interface) and let it recreate on the next launch.
+     
    - **Bottles**: Bottles Manager → Select bottle → Bottle path shown in details
    - **Custom installations**: Look for a directory containing `drive_c` folder
 4. Select the game's Wine executable path:
@@ -84,4 +87,19 @@ Use this method for games that only support mouse input for camera control. This
 
 ### Status Indicator
 The status indicator will be green if data is being sent to opentrack (note: this doesn't confirm opentrack is receiving the data).
+
+## Troubleshooting
+
+### Heroic Games Launcher: UMU Compatibility Issues
+
+If you're using Heroic Games Launcher and LookPilot isn't connecting to your game, UMU (Unified Launcher for Windows Games on Linux) may be interfering with the connection.
+
+**Solution:**
+1. Open your game's settings in Heroic Games Launcher
+2. Navigate to the **Advanced** tab
+3. **Disable UMU**
+4. If you've previously launched the game with UMU enabled, delete the game's prefix folder:
+   - **Manual deletion**: Remove the prefix folder from `~/Games/Heroic/Prefixes/<game-name>`
+   - **Reset through Heroic**: Use Heroic's interface to reset/delete the prefix
+5. Launch the game again - the prefix will be recreated without UMU interference
 
