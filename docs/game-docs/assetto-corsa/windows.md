@@ -7,9 +7,8 @@ Assetto Corsa has **native support** for TrackIR/Freetrack head tracking, so set
 
 ### In-Game Configuration
 1. Launch Assetto Corsa
-2. Select a **cockpit camera view** (e.g., Driver, Cockpit, or Dash Cam) - head tracking only works with cockpit views
-3. Go to `OPTIONS` → `VIEW` (or `SETTINGS` → `VIEW`)
-4. Adjust the following settings:
+2. Go to `OPTIONS` → `VIEW` (or `SETTINGS` → `VIEW`)
+3. Adjust the following settings:
    - **Lock to Horizon**: Set to around 50% for a natural feeling while still sensing the car's camber
    - **Camera movement sensitivity**: Adjust to your preference
 

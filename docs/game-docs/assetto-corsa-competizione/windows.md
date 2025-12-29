@@ -7,9 +7,8 @@ ACC has **native support** for TrackIR/Freetrack head tracking.
 
 ### In-Game Configuration
 1. Launch Assetto Corsa Competizione
-2. Select a **cockpit camera view** (e.g., Driver, Cockpit, or Dash Cam) - head tracking only works with cockpit views
-3. Go to `Options` → `View` settings
-4. Adjust the following settings:
+2. Go to `Options` → `View` settings
+3. Adjust the following settings:
    - **Lock to Horizon**: Set to around 50% for a natural feeling
    - **Camera sensitivity**: Adjust to your preference
 
