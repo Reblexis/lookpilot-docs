@@ -37,23 +37,14 @@ This guide covers common issues you might encounter with LookPilot and how to re
 
 **Solutions**:
 1. **Increase smoothness**: Raise smoothness values in head/eye tracking settings
-2. **Improve lighting**: Add stable, consistent lighting to your face
-3. **Reduce background movement**: Minimize movement behind you in the camera view
-4. **Lower FPS**: Reduce tracking FPS in Settings > Performance if your system can't keep up
-5. **Check camera mounting**: Ensure camera is mounted stably and not vibrating
-6. **Close other applications**: Free up system resources by closing unnecessary programs
+2. **Increase deadzone**: Deadzone prevents tiny movements (sometimes noise) from affecting the tracking.
+3. **Increase confidence threshold**: Can be also found in tracking settings. Increasing will cause less certain tracking predictions to be ignored.
+4. **Improve lighting**: Add stable, consistent lighting to your face
+5. **Reduce background movement**: Minimize movement behind you in the camera view
+6. **Lower FPS**: Reduce tracking FPS in Settings > Performance if your system can't keep up
+7. **Check camera mounting**: Ensure camera is mounted stably and not vibrating
+8. **Close other applications**: Free up system resources by closing unnecessary programs
 
-### Eye Tracking Not Working
-
-**Symptoms**: Eye tracking settings don't affect camera movement
-
-**Solutions**:
-1. **Check eye tracking influence**: Ensure "Eye tracking influence" is greater than 0.0
-2. **Verify eye tracking is enabled**: Check that Yaw and/or Pitch are enabled in eye tracking settings
-3. **Improve eye visibility**: Ensure your eyes are clearly visible to the camera
-4. **Adjust lighting**: Eye tracking requires good lighting on your face, especially around the eyes
-5. **Check camera quality**: Eye tracking works better with higher quality cameras
-6. **Remove obstructions**: Take off glasses if they're causing tracking issues
 
 ## Game Communication Issues
 
@@ -62,14 +53,15 @@ This guide covers common issues you might encounter with LookPilot and how to re
 **Symptoms**: Tracking works in LookPilot but doesn't affect the game camera
 
 **Solutions**:
-1. **Verify game support**: Check that your game supports head tracking (FreeTrack, etc.)
-2. **Check protocol selection**: Ensure the correct protocol is selected for your game
-3. **Enable in game**: Look for head tracking options in the game's settings menu
-4. **Restart game**: Close and reopen the game after starting LookPilot tracking
-5. **Try different protocol**: If available, test with a different communication protocol
-6. **Check Proton setup**: For Proton games, verify Steam installation and game selection are correct
-7. **Verify game launched**: Ensure the target game has been launched at least once through Steam
-8. **Check Steam running**: Make sure Steam is running and logged in
+1. **Look for a game guide**: Most popular games have a corresponding guide here: [game setup guides](https://lookpilot.app/game-guides). 
+2. **Verify TrackIR support** If trying the *freetrack* protocol, verify that given game support *TrackIR* tracking online or in the game documentation.
+3. **Check protocol selection**: Ensure the correct protocol is selected for your game
+4. **Enable in game**: Look for head tracking options in the game's settings menu
+5. **Restart game**: Close and reopen the game after starting LookPilot tracking
+6. **Try different protocol**: If available, test with a different communication protocol
+7. **Check Proton setup**: For Proton games, verify Steam installation and game selection are correct
+8. **Verify game launched**: Ensure the target game has been launched at least once through Steam
+9. **Check Steam running**: Make sure Steam is running and logged in
 
 ### UDP Protocol Issues
 
@@ -117,8 +109,7 @@ This guide covers common issues you might encounter with LookPilot and how to re
 1. **Lower FPS limit**: Reduce tracking FPS in Settings > Performance
 2. **Reduce camera resolution**: Use lower resolution in Settings > Camera
 3. **Close other applications**: Free up CPU resources
-4. **Disable GPU acceleration**: Try disabling GPU acceleration if it's causing issues
-5. **Check camera drivers**: Update to latest camera drivers
+4. **Check camera drivers**: Update to latest camera drivers
 
 ---
 

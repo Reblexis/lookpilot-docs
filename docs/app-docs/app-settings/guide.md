@@ -42,15 +42,9 @@ Found in **Settings > Tracking**.
 - **Static**: Single-frame prediction
 - **Temporal (experimental)**: Uses LSTM for smoother tracking
 
-### Hardware Acceleration (Windows only)
-
-**Use GPU acceleration**:
-- Offloads parts of the tracking pipeline to the GPU
-- Can significantly improve performance on most systems
-
 ## Keybinds
 
-Found in **Settings > Keybinds**.
+Found in **Settings > Keybinds**. Here you can bind your mouse buttons / keyboard keys / joystick buttons to different actions.
 
 ### System Keybinds
 
