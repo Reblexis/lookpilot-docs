@@ -46,9 +46,18 @@ If the auto method doesn't work and you're playing a non-Steam game:
    - **Bottles**: Bottles Manager → Select bottle → Bottle path shown in details
    - **Custom installations**: Look for a directory containing `drive_c` folder
 4. Select the game's Wine executable path:
-   - **System Wine**: `/usr/bin/wine` or just `wine`
-   - **Lutris Wine**: `~/.local/share/lutris/runners/wine/<version>/bin/wine`
-   - **Wine-GE/Proton-GE**: Check your launcher's runner settings for the full path (e.g., `/home/user/.local/share/lutris/runners/wine/wine-ge-8-26/bin/wine`)
+   - **System Wine**: `/usr/bin/wine`
+   - **Steam (Proton)**: `~/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
+   - **Lutris**: `~/.local/share/lutris/runners/wine/<version>/bin/wine`
+   - **Heroic Launcher**: 
+     - Wine: `~/.config/heroic/tools/wine/<version>/bin/wine`
+     - Proton: `~/.config/heroic/tools/proton/<version>/bin/wine`
+   - **Bottles**:
+     - Standard: `~/.local/share/bottles/runners/<version>/bin/wine`
+     - Flatpak: `~/.var/app/com.usebottles.bottles/data/bottles/runners/<version>/bin/wine`
+   - **Custom (Proton-GE)**: `~/.steam/root/compatibilitytools.d/<version>/files/bin/wine`
+
+   > **Tip:** If you're unsure which version you're using, check the "Runner" or "Compatibility" settings in your launcher. The path usually ends with `/bin/wine`.
 5. Launch the game
 6. Click **Start tracking** and wait for about 10 seconds
 7. Click **Stop tracking**
