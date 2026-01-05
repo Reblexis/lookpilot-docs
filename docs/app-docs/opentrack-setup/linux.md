@@ -56,5 +56,4 @@ For a detailed walkthrough with screenshots, see the official [Quick-Start Guide
 
 - Adjust mapping curves in **only one** app (either opentrack *or* LookPilot) and leave the other set to **Identity**
 - To use LookPilot's filtering (smoothing or deadzone), set **Filter** to **None** in opentrack
-- To rely on opentrack's filters instead, set **Deadzone** and **Smoothness** to **0** in LookPilot (under **Head-tracking settings** and **Eye-tracking settings**)
-
+- To rely on opentrack's filters instead, set **Deadzone** and **Smoothness** to **0** in LookPilot (under **General tab** in **Tracking settings**)
