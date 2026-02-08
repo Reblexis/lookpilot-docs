@@ -135,7 +135,7 @@ If you're using Heroic Games Launcher and LookPilot isn't connecting to your gam
    - **Reset through Heroic**: Use Heroic's interface to reset/delete the prefix
 5. Launch the game again - the prefix will be recreated without UMU interference
 
-### Steam: Use the Native (Non-Containerized) Version
+### Use Native (Non-Containerized) Launchers
 
-Containerized versions of Steam (Flatpak, Snap, etc.) can cause issues with LookPilot's connection due to sandboxing. If you're experiencing problems, make sure you're using the native `.deb` version of Steam, which you can download from [https://store.steampowered.com/about/](https://store.steampowered.com/about/).
+Containerized versions of game launchers (Flatpak, Snap, etc.) can cause issues with LookPilot's connection due to sandboxing. This applies to Steam, Heroic Games Launcher, Bottles, and other launchers. If you're experiencing problems, make sure you're using the native versions installed via `.deb` packages or your distribution's package manager. For Steam specifically, download the native version from [https://store.steampowered.com/about/](https://store.steampowered.com/about/).
 
