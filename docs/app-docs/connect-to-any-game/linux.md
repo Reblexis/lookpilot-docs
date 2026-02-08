@@ -65,6 +65,33 @@ If the auto method doesn't work and you're playing a non-Steam game:
 9. Click **Start tracking**
 10. Some games require enabling head tracking in their settings - look for keywords like "TrackIR", "head tracking", or "eye tracking"
 
+### Fallback Option: Steam Games in Nonstandard Locations
+If your Steam game doesn't appear in the game dropdown (e.g., installed in a custom Steam library folder or using Flatpak Steam), you can use the `Other` launcher with manual paths:
+
+1. Set protocol to `freetrack (Wine)`
+2. Set launcher to `Other`
+3. Select the game's Wine prefix path — for Steam/Proton games this is the `compatdata` prefix:
+   - **Default Steam**: `~/.steam/steam/steamapps/compatdata/<appid>/pfx`
+   - **Custom library folder**: `<library_path>/steamapps/compatdata/<appid>/pfx`
+   - **Flatpak Steam**: `~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/compatdata/<appid>/pfx`
+   
+   > **Tip:** To find your game's app ID, open its Steam store page — the ID is in the URL: `store.steampowered.com/app/<appid>/...`
+
+4. Select the game's Wine executable path (the Proton binary):
+   - **Default Steam**: `~/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
+   - **Custom library folder**: `<library_path>/steamapps/common/Proton <version>/files/bin/wine`
+   - **Flatpak Steam**: `~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
+   - **Proton-GE**: `~/.steam/root/compatibilitytools.d/GE-Proton<version>/files/bin/wine`
+
+   > **Tip:** Check which Proton version your game uses in Steam → Right-click game → Properties → Compatibility.
+
+5. Launch the game from Steam
+6. Click **Start tracking** and wait for about 10 seconds
+7. Click **Stop tracking**
+8. Restart the game
+9. Click **Start tracking**
+10. Some games require enabling head tracking in their settings - look for keywords like "TrackIR", "head tracking", or "eye tracking"
+
 ### Status Indicator
 The status indicator shows the connection state:
 - **Grey**: Tracking stopped
