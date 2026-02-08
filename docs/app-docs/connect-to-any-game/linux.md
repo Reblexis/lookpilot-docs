@@ -2,7 +2,7 @@ This guide explains the three main ways to connect LookPilot to any game on Linu
 
 ## Where to Find Protocol Settings
 
-All protocol settings described below can be found at the top of the **General** tab in **Tracking settings**. Click the **Settings** button in the output pose visualization to open the Tracking settings window.
+All protocol settings described below can be found at the bottom of the **General** tab in **Tracking settings**. Click the **Settings** button in the output pose visualization to open the Tracking settings window.
 
 ## 1. FreeTrack (emulating TrackIR)
 
