@@ -52,9 +52,7 @@ If the auto method doesn't work and you're playing a non-Steam game:
    - **Heroic Launcher**: 
      - Wine: `~/.config/heroic/tools/wine/<version>/bin/wine`
      - Proton: `~/.config/heroic/tools/proton/<version>/bin/wine`
-   - **Bottles**:
-     - Standard: `~/.local/share/bottles/runners/<version>/bin/wine`
-     - Flatpak: `~/.var/app/com.usebottles.bottles/data/bottles/runners/<version>/bin/wine`
+   - **Bottles**: `~/.local/share/bottles/runners/<version>/bin/wine`
    - **Custom (Proton-GE)**: `~/.steam/root/compatibilitytools.d/<version>/files/bin/wine`
 
    > **Tip:** If you're unsure which version you're using, check the "Runner" or "Compatibility" settings in your launcher. The path usually ends with `/bin/wine`.
@@ -66,21 +64,19 @@ If the auto method doesn't work and you're playing a non-Steam game:
 10. Some games require enabling head tracking in their settings - look for keywords like "TrackIR", "head tracking", or "eye tracking"
 
 ### Fallback Option: Steam Games in Nonstandard Locations
-If your Steam game doesn't appear in the game dropdown (e.g., installed in a custom Steam library folder or using Flatpak Steam), you can use the `Other` launcher with manual paths:
+If your Steam game doesn't appear in the game dropdown (e.g., installed in a custom Steam library folder), you can use the `Other` launcher with manual paths:
 
 1. Set protocol to `freetrack (Wine)`
 2. Set launcher to `Other`
 3. Select the game's Wine prefix path — for Steam/Proton games this is the `compatdata` prefix:
    - **Default Steam**: `~/.steam/steam/steamapps/compatdata/<appid>/pfx`
    - **Custom library folder**: `<library_path>/steamapps/compatdata/<appid>/pfx`
-   - **Flatpak Steam**: `~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/compatdata/<appid>/pfx`
    
    > **Tip:** To find your game's app ID, open its Steam store page — the ID is in the URL: `store.steampowered.com/app/<appid>/...`
 
 4. Select the game's Wine executable path (the Proton binary):
    - **Default Steam**: `~/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
    - **Custom library folder**: `<library_path>/steamapps/common/Proton <version>/files/bin/wine`
-   - **Flatpak Steam**: `~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
    - **Proton-GE**: `~/.steam/root/compatibilitytools.d/GE-Proton<version>/files/bin/wine`
 
    > **Tip:** Check which Proton version your game uses in Steam → Right-click game → Properties → Compatibility.
@@ -138,4 +134,8 @@ If you're using Heroic Games Launcher and LookPilot isn't connecting to your gam
    - **Manual deletion**: Remove the prefix folder from `~/Games/Heroic/Prefixes/<game-name>`
    - **Reset through Heroic**: Use Heroic's interface to reset/delete the prefix
 5. Launch the game again - the prefix will be recreated without UMU interference
+
+### Steam: Use the Native (Non-Containerized) Version
+
+Containerized versions of Steam (Flatpak, Snap, etc.) can cause issues with LookPilot's connection due to sandboxing. If you're experiencing problems, make sure you're using the native `.deb` version of Steam, which you can download from [https://store.steampowered.com/about/](https://store.steampowered.com/about/).
 
