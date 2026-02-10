@@ -20,4 +20,4 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 8. Click **Start tracking**
 
 ## Nuclear Option Setup
-Once LookPilot is running, launch the game and head tracking should work automatically. If not, check the game's control/camera settings for TrackIR or head tracking options.
+In the game, go to **Controls** and enable **Use TrackIR inputs for cockpit camera**.

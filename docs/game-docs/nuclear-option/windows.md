@@ -3,4 +3,4 @@
 2. Click **Start** to begin tracking
 
 ## Nuclear Option Setup
-Once LookPilot is running, launch the game and head tracking should work automatically. If not, check the game's control/camera settings for TrackIR or head tracking options.
+In the game, go to **Controls** and enable **Use TrackIR inputs for cockpit camera**.
