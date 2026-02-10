@@ -6,3 +6,5 @@
 1. Go to `Camera Settings`
 2. Switch `Head Tracking with TrackIR` to `On`
 
+## Credits
+Thanks to wlencio for helping with this guide.

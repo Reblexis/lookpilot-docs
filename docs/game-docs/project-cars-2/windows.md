@@ -8,4 +8,5 @@
 
 Camera should follow your head movements from the pits.
 
-
+## Credits
+Thanks to wlencio for helping with this guide.

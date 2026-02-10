@@ -3,4 +3,7 @@
 2. Click **Start** to begin tracking
 
 ## rFactor2 Setup
-Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled. 
+Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled.
+
+## Credits
+Thanks to wlencio for helping with this guide.

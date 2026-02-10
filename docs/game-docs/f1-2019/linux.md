@@ -22,3 +22,6 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 ## F1 2019 Setup
 1. Go to `Camera Settings`
 2. Switch `Head Tracking with TrackIR` to `On`
+
+## Credits
+Thanks to wlencio for helping with this guide.

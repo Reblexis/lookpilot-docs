@@ -11,3 +11,6 @@ Tracking should start (look for a green light on the top right corner) immediate
 1. Switch to helmet camera
 
 Camera should be following your head movements from the pits.
+
+## Credits
+Thanks to wlencio for helping with this guide.

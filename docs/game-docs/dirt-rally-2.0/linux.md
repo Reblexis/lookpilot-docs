@@ -7,3 +7,6 @@
 6. Click **Stop tracking**
 7. Restart the game
 8. Click **Start tracking**
+
+## Credits
+Thanks to malinkb for helping with this guide.
