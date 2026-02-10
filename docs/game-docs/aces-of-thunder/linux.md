@@ -21,3 +21,6 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 ## Aces of Thunder Setup
 Head tracking should work automatically once LookPilot is running.
+
+## Credits
+Thanks to [Dunkz](https://www.youtube.com/@DunkzGam1ng) for helping with this guide.

@@ -4,3 +4,6 @@
 
 ## Aces of Thunder Setup
 Head tracking should work automatically once LookPilot is running.
+
+## Credits
+Thanks to [Dunkz](https://www.youtube.com/@DunkzGam1ng) for helping with this guide.
