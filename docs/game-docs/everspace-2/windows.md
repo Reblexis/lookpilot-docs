@@ -3,4 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## Everspace 2 Setup
-Once LookPilot is running, launch the game and head tracking should work automatically. If not, check the game's control/camera settings for TrackIR or head tracking options.
+1. Launch Everspace 2
+2. Go to **Settings** → **Game**
+3. Set **TrackIR Support** to **On**

@@ -3,4 +3,6 @@
 2. Click **Start** to begin tracking
 
 ## EVERSPACE Setup
-Head tracking should work automatically. If it doesn't respond, check the game's settings for a TrackIR or head tracking option that may need to be enabled. 
+1. Launch EVERSPACE
+2. Go to **Options** and enable **Head Tracking**
+3. Switch to **Cockpit View** in-game (head tracking only works in cockpit view)
