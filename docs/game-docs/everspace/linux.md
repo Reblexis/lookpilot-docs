@@ -22,5 +22,5 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 ## EVERSPACE Setup
 1. If launching the game from Steam, make sure to force the use of specific compatibility tool (Proton)
 2. Launch EVERSPACE
-3. Go to **Options** and enable **Head Tracking**
+3. In the game options, ensure head tracking is enabled
 4. Switch to **Cockpit View** in-game (head tracking only works in cockpit view)

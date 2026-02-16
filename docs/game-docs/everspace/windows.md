@@ -4,5 +4,5 @@
 
 ## EVERSPACE Setup
 1. Launch EVERSPACE
-2. Go to **Options** and enable **Head Tracking**
+2. In the game options, ensure head tracking is enabled
 3. Switch to **Cockpit View** in-game (head tracking only works in cockpit view)
