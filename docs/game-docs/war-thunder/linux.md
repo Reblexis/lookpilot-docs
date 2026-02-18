@@ -5,9 +5,8 @@
 
 ## War Thunder Setup
 1. In the game go to `Settings` → `Controls`
-2. Select `Mouse Joystick` mode
-3. Set `View axis control via Joystick` to `Yes`
-4. Bind head tracking axes:
-   - TrackIR: Pitch → Joystick: Axis Z
-   - TrackIR: Yaw → Joystick: Axis X  
-   - TrackIR: Roll → Joystick: Axis Y (optional)
+2. Bind the following axes:
+   - `View in battle - Air (X-axis)` → Right Thumb Horizontal
+   - `View in battle - Air (Y-axis)` → Right Thumb Vertical
+3. For both axes, set `Relative control` to `No`
+4. For the Y-axis, set `Invert Axis` to `Yes`
