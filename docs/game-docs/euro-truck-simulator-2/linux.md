@@ -24,5 +24,5 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 ## Common issues
 ### Game not reacting to tracking input even though the tracking is running
-1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *<STEAM_LIBRARY>/steamapps/compatdata/<APPID>/pfx/drive_c/users/steamuser/Documents/Euro Truck Simulator 2/config.cfg*.
+1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *~/.steam/debian-installation/steamapps/compatdata/227300/pfx/drive_c/users/steamuser/Documents/Euro Truck Simulator 2/config.cfg*.
 2. Bind a key in Keys and Buttons for "Enable Head Tracking" and try pressing the key in-game.
