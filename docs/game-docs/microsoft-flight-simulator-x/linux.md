@@ -1,18 +1,14 @@
-## LookPilot configuration
+## LookPilot Configuration
 
-FSX’s native head-tracking path is **SimConnect** (see [OpenTrack setup with LookPilot](../../app-docs/opentrack-setup/linux.md) and [Beam Eye Tracker’s FSX: Steam Edition guide](https://beam.eyeware.tech/games/microsoft-flight-simulator-x-steam-edition/)). That stack is aimed at **Windows**; under Wine/Proton it is often unreliable or impractical.
-
-Do **not** use the **`auto`** protocol here—it assumes FreeTrack-style integration, which does not match how FSX consumes external view pose. **`freetrack (Wine)`** is likewise not a useful route for FSX with LookPilot.
-
-**Practical approach on Linux:** drive the **camera with a virtual joystick** instead (same idea as in the generic [Virtual joystick](../../app-docs/connect-to-any-game/linux.md#2-virtual-joystick) section):
+FSX is usually set up with SimConnect through opentrack on **Windows**; the `auto` and `freetrack (Wine)` paths used for many other games are not appropriate here.
 
 1. Set protocol to `virtual joystick`
-2. In **Tracking settings**, open each axis tab and use **Mapping** to choose which joystick axes carry yaw, pitch, and any other motion you want (see the linked guide above)
-3. Launch FSX in your Wine/Proton setup
+2. In **Tracking settings**, open each axis tab and use **Mapping** to assign joystick axes for yaw, pitch, and any other motion you want (see [Virtual joystick](../../app-docs/connect-to-any-game/linux.md#2-virtual-joystick)).
+3. Launch FSX in your Wine or Proton setup
 4. Click **Start tracking**
 
-## Microsoft Flight Simulator X setup
+## Microsoft Flight Simulator X Setup
 
-In FSX **Settings → Controls**, assign **pan / tilt** (or cockpit view) to the virtual joystick axes you mapped. Prefer **absolute** (non-relative) behavior where the sim offers it so the view stays aligned with your head pose.
+1. In **Settings → Controls**, bind pan and tilt (or cockpit view) to the virtual joystick axes you mapped. Prefer non-relative (absolute) control where the sim offers it.
 
-For full SimConnect-based behavior, use FSX on **Windows**: the [Windows guide](windows.md) for LookPilot + opentrack, and opentrack’s [SimConnect protocol documentation](https://mintlify.com/opentrack/opentrack/protocols/simconnect) for SimConnect setup.
+For SimConnect-based head tracking on Windows, use the [Windows guide](windows.md) and opentrack’s [SimConnect protocol documentation](https://mintlify.com/opentrack/opentrack/protocols/simconnect).
