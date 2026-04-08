@@ -1,13 +1,15 @@
 ## LookPilot configuration
 
-FSX: Steam Edition is **more involved** than games that only need a single LookPilot protocol. External head pose is delivered through **SimConnect**, not LookPilot’s FreeTrack-style protocol. The supported approach matches [Beam Eye Tracker’s FSX: Steam Edition notes](https://beam.eyeware.tech/games/microsoft-flight-simulator-x-steam-edition/): **LookPilot → opentrack → Microsoft FSX SimConnect**.
+FSX: Steam Edition is **more involved** than games that only need a single LookPilot protocol. External head pose goes through **SimConnect**, which **opentrack** drives—not a SimConnect option inside LookPilot.
 
-1. Install **opentrack** from the [opentrack releases page](https://github.com/opentrack/opentrack/releases/latest).
-2. Follow [OpenTrack setup with LookPilot](../../app-docs/opentrack-setup/windows.md): in LookPilot set **Protocol** to `opentrack`; in opentrack set **Tracker** to **UDP over network**.
-3. In opentrack, set **Output** to **Microsoft FSX SimConnect**.
-4. Click **Start tracking** in LookPilot, then **Start** in opentrack and confirm the preview moves with your head.
-5. Launch **Microsoft Flight Simulator X: Steam Edition** from Steam. After the first-time setup of this chain, **fully quit and restart** the sim if it does not react—FSX often only notices SimConnect clients after a clean launch.
+**LookPilot:** set **Protocol** to **`opentrack`** (UDP into opentrack).
+
+**Opentrack and SimConnect:** install opentrack from the [opentrack releases page](https://github.com/opentrack/opentrack/releases/latest), then follow opentrack’s **[SimConnect protocol documentation](https://mintlify.com/opentrack/opentrack/protocols/simconnect)** for the SimConnect client (`SimConnect.msi`), choosing **Microsoft FSX SimConnect** as output, picking the right manifest, starting opentrack, and troubleshooting. For the **Steam** install layout and where to run the MSI, opentrack also documents this in **[SimConnect FSX SDK for Steam edition](https://github.com/opentrack/opentrack/wiki/SimConnect-FSX-SDK-for-Steam-edition)** (wiki).
+
+**With LookPilot:** use [OpenTrack setup with LookPilot](../../app-docs/opentrack-setup/windows.md) (LookPilot **Protocol** `opentrack`, opentrack **Tracker** **UDP over network**). After SimConnect is configured in opentrack, click **Start tracking** in LookPilot, **Start** in opentrack, then launch **Microsoft Flight Simulator X: Steam Edition** from Steam. **Fully quit and restart** the sim once after the first-time setup if it does not react.
+
+The same overall workflow is described in [Beam Eye Tracker’s FSX: Steam Edition guide](https://beam.eyeware.tech/games/microsoft-flight-simulator-x-steam-edition/).
 
 ## Microsoft Flight Simulator X: Steam Edition setup
 
-No separate in-game “enable TrackIR” step is usually required once opentrack is running with **Microsoft FSX SimConnect** output.
+Usually no separate in-game “enable TrackIR” step is required once opentrack’s SimConnect output is working. If the camera still does not move, use **Troubleshooting** in opentrack’s [SimConnect protocol documentation](https://mintlify.com/opentrack/opentrack/protocols/simconnect).

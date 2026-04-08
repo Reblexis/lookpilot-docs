@@ -15,4 +15,4 @@ Do **not** use the **`auto`** protocol here—it assumes FreeTrack-style integra
 
 In FSX **Settings → Controls**, assign **pan / tilt** (or cockpit view) to the virtual joystick axes you mapped. Prefer **absolute** (non-relative) behavior where the sim offers it so the view stays aligned with your head pose.
 
-For full SimConnect-based behavior, use FSX on **Windows** with opentrack’s **Microsoft FSX SimConnect** output as described in the Windows guide for this title.
+For full SimConnect-based behavior, use FSX on **Windows**: the [Windows guide](windows.md) for LookPilot + opentrack, and opentrack’s [SimConnect protocol documentation](https://mintlify.com/opentrack/opentrack/protocols/simconnect) for SimConnect setup. Steam install paths for the SDK are in opentrack’s [SimConnect FSX SDK for Steam edition](https://github.com/opentrack/opentrack/wiki/SimConnect-FSX-SDK-for-Steam-edition) wiki page.
