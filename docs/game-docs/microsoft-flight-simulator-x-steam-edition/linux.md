@@ -1,24 +1,18 @@
-## LookPilot Configuration
-1. Set protocol to `auto`
-2. Launch the game
-3. Select the Microsoft Flight Simulator X Steam Edition Wine prefix in the `Game's Wine prefix` dropdown
-4. Click **Start tracking** to begin tracking and wait for about 10 seconds
-5. Click **Stop tracking**
-6. Restart the game
-7. Click **Start tracking**
+## LookPilot configuration
 
-### Fallback Option
-If the above method doesn't work, try using the freetrack (Wine) protocol:
+FSX’s native head-tracking path is **SimConnect** (see [OpenTrack setup with LookPilot](../../app-docs/opentrack-setup/linux.md) and [Beam Eye Tracker’s FSX: Steam Edition guide](https://beam.eyeware.tech/games/microsoft-flight-simulator-x-steam-edition/)). That stack is aimed at **Windows**; under Wine/Proton it is often unreliable or impractical.
 
-1. Set protocol to `freetrack (Wine)`
-2. Select your Steam installation from the dropdown
-3. Set Game to `Microsoft Flight Simulator X: Steam Edition` in the game dropdown
-4. Launch the game from Steam
-5. Click **Start tracking** to begin tracking and wait for about 10 seconds
-6. Click **Stop tracking**
-7. Restart the game
-8. Click **Start tracking**
+Do **not** use the **`auto`** protocol here—it assumes FreeTrack-style integration, which does not match how FSX consumes external view pose. **`freetrack (Wine)`** is likewise not a useful route for FSX with LookPilot.
 
-## Microsoft Flight Simulator X Steam Edition Setup
-Head tracking should work automatically once configured.
+**Practical approach on Linux:** drive the **camera with a virtual joystick** instead (same idea as in the generic [Virtual joystick](../../app-docs/connect-to-any-game/linux.md#2-virtual-joystick) section):
 
+1. Set protocol to `virtual joystick`
+2. In **Tracking settings**, open each axis tab and use **Mapping** to choose which joystick axes carry yaw, pitch, and any other motion you want (see the linked guide above)
+3. Launch **Microsoft Flight Simulator X: Steam Edition** from Steam (or your runner)
+4. Click **Start tracking**
+
+## Microsoft Flight Simulator X: Steam Edition setup
+
+In FSX **Settings → Controls**, assign **pan / tilt** (or cockpit view) to the virtual joystick axes you mapped. Prefer **absolute** (non-relative) behavior where the sim offers it so the view stays aligned with your head pose.
+
+For full SimConnect-based behavior, use FSX on **Windows** with opentrack’s **Microsoft FSX SimConnect** output as described in the Windows guide for this title.
