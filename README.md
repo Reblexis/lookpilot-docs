@@ -1,6 +1,6 @@
 # LookPilot Documentation
 
-Official documentation repository for LookPilot head and eye tracking software. This repository contains all user guides, setup instructions, and troubleshooting documentation that powers the [LookPilot website](https://lookpilot.app).
+Official documentation repository for LookPilot head and eye tracking in games. This repository contains all user guides, setup instructions, and troubleshooting documentation that powers the [LookPilot website](https://lookpilot.app).
 
 ## 📚 What's in this Repository
 
