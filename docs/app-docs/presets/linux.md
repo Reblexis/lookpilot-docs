@@ -169,6 +169,11 @@ When sharing to the community:
 - Restart LookPilot to re-register keybinds
 - Verify the keybind is set in the preset options
 
+## Troubleshooting
+
+- **Community list is empty**: check that LookPilot has internet access and is not blocked by your antivirus or firewall. Some ISPs block our backend - if presets never load on a working connection, testing over a VPN confirms it.
+- **A community preset broke my setup**: a preset stores the communication protocol and axis settings too. After applying one, open Tracking settings and verify the protocol still matches your game's setup guide.
+
 ## Support
 
 For additional help:

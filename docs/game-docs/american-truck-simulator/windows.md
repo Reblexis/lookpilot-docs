@@ -7,10 +7,13 @@ Head tracking should work automatically. If it doesn't respond, check the game's
 
 ## Common issues
 ### Game not reacting to tracking input even though the tracking is running
-1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *../Documents/American Truck Simulator/config.cfg*.
+1. Make sure to have the line "uset g_trackir" set to "1" (including the quotes) in *../Documents/American Truck Simulator/config.cfg*. Edit the file with the game closed - the game rewrites it on exit, which can undo your change. Some users report the value reverting even then; marking config.cfg read-only after editing has worked as a countermeasure (community-reported).
+2. Bind a key in Keys and Buttons for "Enable Head Tracking" and try pressing it in-game.
 
 ### Mouse-look stops working after closing LookPilot
 A known issue in SCS titles: if the in-game camera stops following your mouse after you exit LookPilot, restart the game - mouse-look returns. Keeping LookPilot running for the whole session avoids it entirely.
+
+If you want to stop using head tracking and hand camera control back to the mouse permanently, set `uset g_trackir` back to `"0"` in *../Documents/American Truck Simulator/config.cfg* (edit with the game closed). Set it to `"1"` again when you next want head tracking.
 
 ### Having to re-center constantly while driving
 The most common ATS complaint. Three things fix nearly all of it: put the webcam dead-center under or above your monitor (not off to the side), recenter with **Alt+C** while sitting in your natural driving posture, and add a small center plateau to the yaw curve in *Settings -> Tracking* so highway posture drift does not accumulate into the camera.
@@ -24,7 +27,7 @@ Shaky or twitchy tracking is the most-reported issue across all games, and it al
 4. **Flatten the curve center.** Give the response curves a gentle plateau around the center so breathing and small posture shifts do not move the camera.
 
 ## Using a wheel or HOTAS alongside LookPilot
-If your wheel or stick misbehaves while LookPilot runs (stiff force feedback, lost input), make sure the output protocol is `freetrack` rather than *virtual joystick* - the virtual joystick device can conflict with some wheel drivers. ATS reads the FreeTrack protocol directly, so the virtual joystick is not needed.
+If your wheel or stick misbehaves while LookPilot runs (stiff force feedback, lost input), update LookPilot first - a past version caused stiff force feedback on some wheels and was fixed in an update. Then make sure the output protocol is `freetrack` rather than *virtual joystick* - the virtual joystick device can conflict with some wheel drivers. ATS reads the FreeTrack protocol directly, so the virtual joystick is not needed.
 
 ## FAQ
 **Do I need TrackIR hardware?** No - ATS reads the FreeTrack protocol, which LookPilot provides from a normal webcam. Together with ETS2, ATS makes up roughly two thirds of all LookPilot tracking hours, so the truck-sim path is the most battle-tested in the app.

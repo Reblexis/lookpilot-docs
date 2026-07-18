@@ -19,12 +19,25 @@ Found in **Settings > Camera**.
   - 1280x720 recommended for most setups
   - 640x480 for lower-end systems
   - 1920x1080 for high-end systems (may reduce camera FPS)
+  - Each resolution entry lists its maximum framerate, and LookPilot always runs the highest framerate the camera offers at the selected resolution. High-fps modes (90-120 fps) are usually only available at lower resolutions - pick 720p or lower to unlock them.
 - **Mirror camera**: Flip the camera preview horizontally (doesn't affect tracking)
+- **Auto exposure**: Lets the camera manage exposure automatically. In dim rooms auto exposure can silently halve your camera's framerate; disabling it (and lighting your face from the front) restores full fps.
+- **Use GStreamer**: Capture backend with the lowest latency. Try disabling it if your camera fails to load.
+- **Use MJPEG**: Compressed capture that reduces USB bandwidth on high-resolution cameras. Disable it if the camera fails to load or shows "format not supported" errors.
+- **Use DirectShow** (Windows): Legacy capture API. Enable it for older cameras that do not work with the default backend - e.g. the PS3 Eye (see Troubleshooting).
 
 **Tips**:
 - Position camera at eye level for best tracking
 - Ensure good lighting on your face
 - USB 3.0 cameras generally perform better than USB 2.0
+- Plug the camera in directly - USB hubs can limit bandwidth and framerate
+
+### Choosing a Webcam
+- **Framerate beats resolution**: 30 fps is the workable minimum, 60 fps is the sweet spot, above 60 the gains are minimal. 720p at 60 fps is the recommended target.
+- **Field of view does not affect tracking quality** as long as the image is undistorted - a wider FOV just allows bigger physical movements.
+- **Community-verified models**: Logitech C920 / C922 / C925e / C270 / Brio / StreamCam, EMEET C950 (1080p60), OBSBOT Meet SE (100 fps), Ugreen 1080p60, PS3 Eye (~60 fps, very cheap; on Windows it needs a DirectShow driver - see Troubleshooting).
+- **Phones work well as cameras**: on Windows use DroidCam or iVCam as the bridge app and connect over **USB, not Wi-Fi** (Wi-Fi latency makes tracking floaty); the phone then appears in the camera dropdown. Keep the phone near eye level.
+- Cameras with built-in IR illumination (e.g. ELP KL36IR) are a community-recommended option for playing in the dark.
 
 ## Tracking
 
@@ -55,6 +68,10 @@ Found in **Settings > Keybinds**. Here you can bind your mouse buttons / keyboar
 **Toggle Tracking**:
 - Default: Not assigned
 - Starts or stops head tracking
+
+**Pause Tracking**:
+- Default: Not assigned
+- Freezes tracking at your current pose (unlike Toggle, which recenters when tracking restarts) - useful for holding a view while clicking small cockpit switches
 
 ### Setting Keybinds
 
