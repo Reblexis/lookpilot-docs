@@ -17,4 +17,8 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 1. If launching the game from Steam, make sure to force the use of specific compatibility tool (Proton)
 2. Head tracking should work once LookPilot is running
 
+## Second fallback: virtual joystick
+If neither `auto` nor `freetrack (Wine)` ever connects (status stays yellow), users have had good results with the `virtual joystick` protocol instead (community-confirmed):
 
+1. Set protocol to `virtual joystick` and start tracking.
+2. In IL-2's controls, bind **Bow head vertically** and **Bow head horizontally** to the virtual right stick axes.

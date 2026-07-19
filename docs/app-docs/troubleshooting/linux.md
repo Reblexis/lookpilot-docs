@@ -1,5 +1,19 @@
 This guide covers common issues you might encounter with LookPilot and how to resolve them.
 
+## Find your issue
+
+| Symptom | Where to look |
+|---|---|
+| App won't launch at all | [App Startup Issues](#app-startup-issues) |
+| Camera missing from the dropdown | [Camera Not Detected](#camera-not-detected) |
+| Tracking shaky or drifting | [Tracking is Jittery](#tracking-is-jittery) |
+| Status stays yellow / game ignores tracking | [Game Not Responding to Head Tracking](#game-not-responding-to-head-tracking) |
+| Game never connects under Proton | [Proton Issues](#proton-issues) |
+| Keybinds do nothing (Wayland) | [Keybind Issues](#keybind-issues) |
+| No internet / offline play | [Offline Use](#offline-use) |
+| Something broke after an update | [Switching to an Older Version](#switching-to-an-older-version) |
+
+
 ## Camera Issues
 
 ### Camera Not Detected
@@ -85,6 +99,8 @@ This guide covers common issues you might encounter with LookPilot and how to re
 4. **Steam running**: Make sure Steam is running and you're logged in
 5. **Verify game in library**: Confirm the game is actually in your Steam library
 6. **Browse for Steam**: Manually browse to your Steam installation if auto-detection fails
+7. **Force a mainline Proton version**: If `auto` / `freetrack (Wine)` never connect, force a specific official Proton version on the game (Steam -> Properties -> Compatibility). Proton 10 is the most commonly confirmed by users; Proton-GE has also fixed connection failures where Proton Experimental or distro-specific builds (e.g. CachyOS Proton) failed
+8. **Native Linux game builds**: most native builds have no head-tracking interface at all (X4: Foundations is a notable exception, via UDP). If a game ships both native and Windows builds, force Proton on the game and follow the Wine/Proton setup
 
 ## Keybind Issues
 
@@ -93,7 +109,7 @@ This guide covers common issues you might encounter with LookPilot and how to re
 **Symptoms**: Preset keybinds or system keybinds don't respond when pressed
 
 **Solutions**:
-1. **Wayland limitation**: Keybinds may not work when using Wayland display server
+1. **Wayland**: Update LookPilot first - recent versions support global hotkeys on Wayland. The robust route on any Wayland compositor is the local control API: bind your compositor's own shortcuts to `lookpilotctl center` / `toggle` / `pause` (see the Control API guide)
 2. **Check other applications**: Verify another application isn't capturing the key combination
 3. **Try different keys**: Use a different key combination
 4. **Restart LookPilot**: Close and reopen the application to re-register keybinds
@@ -110,6 +126,38 @@ This guide covers common issues you might encounter with LookPilot and how to re
 2. **Reduce camera resolution**: Use lower resolution in Settings > Camera
 3. **Close other applications**: Free up CPU resources
 4. **Check camera drivers**: Update to latest camera drivers
+
+## App Startup Issues
+
+### LookPilot won't launch
+
+**Solutions**:
+1. **Run it natively**: Never force Proton/Wine on LookPilot itself - it is a native Linux app
+2. **Force the sniper runtime**: If the default launch fails, set the Steam compatibility tool for LookPilot to "Steam Linux Runtime 3.0 (sniper)" and let it update
+3. **Check the logs**: They live in `~/.local/share/LookPilot/logs` - zip and send them to support@lookpilot.app
+4. **Clean reset (last resort)**: Delete the installed files (Steam -> Browse local files) plus `~/.local/share/LookPilot`, then reinstall. This resets local presets and settings
+5. **Standalone fallback**: The standalone build from lookpilot.app/downloads works without the Steam runtime
+6. **AppImage needs FUSE2**: The standalone AppImage currently requires FUSE2, which some distros (Fedora Atomic, CachyOS) no longer ship - install libfuse2 manually or use the Steam build
+
+## Offline Use
+
+LookPilot currently needs an internet connection at startup (known issue). Workarounds:
+1. **Start online, then disconnect**: Start LookPilot while online and load your preset - tracking keeps working after you go offline
+2. **Launch the binary directly**: `.../steamapps/common/LookPilot/main.dist/LookPilot` starts without Steam and offers a guest login (presets cannot be loaded that way)
+3. **ISP blocking**: If community presets or bug reports never load even though your connection works, your ISP may be blocking our servers - testing over a VPN confirms this
+
+## Switching to an Older Version
+
+If something broke right after an update, rolling back is a quick way to confirm it and keep playing:
+- **Steam**: right-click LookPilot > Properties > Betas, and pick an older version from the dropdown
+- **Standalone**: all releases are available at github.com/Reblexis/lookpilot-downloads/releases
+
+If an older version fixes your problem, please report the bug (in-app Feedback tab) so it gets fixed in the current version.
+
+## Known Issues
+
+- **Game stays "running" in Steam after you exit it**: press **Stop tracking** in LookPilot and the game process will finish closing. You do not need to quit LookPilot
+- **DCS hangs on exit while tracking runs**: stop tracking before quitting DCS (see the DCS World guide)
 
 ---
 

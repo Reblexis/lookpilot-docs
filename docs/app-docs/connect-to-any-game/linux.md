@@ -18,6 +18,8 @@ This is the recommended method for most games.
 7. Click **Start tracking**
 8. Some games require enabling head tracking in their settings - look for keywords like "TrackIR", "head tracking", or "eye tracking"
 
+The stop-tracking/restart-game cycle is normally needed only the **first time per game** - afterwards tracking connects directly. Note the indicator can already show green before the restart even though the game has not yet loaded the tracker.
+
 ### Fallback Option: Steam Games
 If the auto method doesn't work and you're playing a Steam game:
 
@@ -105,6 +107,12 @@ Use this method for games that don't support FreeTrack/TrackIR but support joyst
 2. Click **Start tracking**
 3. To configure axis mapping, go to **Tracking settings** and open each axis tab (Yaw, Pitch, Roll, X, Y, Z) - use the **Mapping** dropdown to select which joystick axis each head/eye tracking axis should control
 
+### First-time permissions (/dev/uinput)
+Creating a virtual joystick needs write access to `/dev/uinput`. On first use LookPilot shows an error with a `setup_joystick_permissions.sh` command to run:
+
+- For AppImage installs, the `/tmp/.mount_...` path in that command changes on every launch - copy the command fresh from the current error message **while LookPilot is still open**, or extract the AppImage with `--appimage-extract` and run the script from `squashfs-root`.
+- If the script route keeps failing, add yourself to the input group manually: `sudo usermod -aG input $USER`, then **reboot** (logging out is not always enough).
+
 ### Status Indicator
 The status indicator will be green if the virtual joystick is initialized and running.
 
@@ -136,3 +144,6 @@ If you're using Heroic Games Launcher and LookPilot isn't connecting to your gam
 5. Launch the game again - the prefix will be recreated without UMU interference
 
 ### Use Native (Non-Containerized) LaunchersContainerized versions of game launchers (Flatpak, Snap, etc.) can cause issues with LookPilot's connection due to sandboxing. This applies to Steam, Heroic Games Launcher, Bottles, and other launchers. If you're experiencing problems, make sure you're using the native versions installed via `.deb` packages or your distribution's package manager. For Steam specifically, download the native version from [https://store.steampowered.com/about/](https://store.steampowered.com/about/).
+
+### CachyOS Proton builds fail to connect
+CachyOS-specific Proton builds currently have connection issues (status stuck on "Connecting", or the game missing from the freetrack (Wine) game dropdown). Force an official Proton version or Proton-GE on the game (Steam -> Properties -> Compatibility) until this is fixed.

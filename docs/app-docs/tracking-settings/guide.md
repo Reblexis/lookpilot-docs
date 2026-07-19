@@ -43,7 +43,7 @@ Enable or disable individual tracking axes. Each enabled axis gets its own tab f
 
 These settings apply to all axes as a base value:
 
-**Rotation sensitivity** (0.1 - 5.0): Global sensitivity multiplier for rotation axes (Yaw, Pitch, Roll) for both head and eye tracking. Increase for larger displays or if you prefer smaller head movements.
+**Rotation sensitivity** (0.1 - 5.0): Global sensitivity multiplier for rotation axes (Yaw, Pitch, Roll) for both head and eye tracking. Increase for larger displays or if you prefer smaller head movements. Note that sensitivity also raises the **maximum output angle**: if you cannot reach a full 180 degree yaw or look far enough down, increase sensitivity (or raise the curve's outer points by left-clicking them).
 
 **Movement sensitivity** (0.1 - 5.0): Global sensitivity multiplier for movement axes (X, Y, Z) for head tracking. Adjust based on how much physical leaning you want to translate to in-game movement.
 
@@ -151,3 +151,11 @@ Key formula interactions:
 - Global smoothness: 0.2-0.3
 - Global deadzone: 0.05-0.1
 - Consider adding eye tracking (influence 0.2-0.4) for target acquisition
+
+## FAQ
+
+**I can't reach large output angles (e.g. a full 180 degree yaw, or looking far down).** The maximum output grows with the axis sensitivity - increase it, or left-click the mapping curve's outer points and drag them higher. Also check eye tracking: an enabled but uncalibrated eye-tracking influence limits the achievable head yaw - set the eye influence to 0 or calibrate eye tracking.
+
+**The view dips when I blink.** Raise the eye Pitch smoothness and deadzone (a deadzone of 1.00 eliminated it for some users), or disable the eye Pitch axis entirely. Blink detection exists but does not catch every blink yet.
+
+**Where do curves come in when routing through opentrack?** Set the curves to identity in one of the two apps (and the filter to None in opentrack) so the two do not fight - see the Opentrack Setup guide.

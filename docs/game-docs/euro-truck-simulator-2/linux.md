@@ -33,9 +33,13 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 
 ### Mouse-look stops working after closing LookPilot
 A known issue in SCS titles: if the in-game camera stops following your mouse after you exit LookPilot, restart the game - mouse-look returns. Keeping LookPilot running for the whole session avoids it entirely.
+
+If you want to stop using head tracking and hand camera control back to the mouse permanently, set `uset g_trackir` back to `"0"` in the game's *config.cfg* (path above; edit with the game closed). Set it to `"1"` again when you next want head tracking.
+
 ### Game shows a yellow status / never connects
 1. Start LookPilot and tracking **before** launching the game, or restart the game after tracking is running - SCS titles only look for the tracker at startup.
-2. Verify `uset g_trackir "1"` (with quotes) in the game's *config.cfg* (see path above) - game updates occasionally reset it.
+2. Verify `uset g_trackir "1"` (with quotes) in the game's *config.cfg* (see path above) - game updates occasionally reset it. Edit with the game closed; if the value keeps reverting, marking config.cfg read-only after editing has worked as a countermeasure (community-reported).
+4. If injection succeeds but ETS2 1.60+ never connects on Proton Experimental, force a different Proton version on the game - one user got it connecting with Proton GE (community-reported).
 3. In-game, bind a key to **Enable Head Tracking** (Keys & Buttons) and press it once while driving.
 
 ### Hotkeys do nothing on Wayland (Hyprland, KDE Wayland, GNOME)
