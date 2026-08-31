@@ -8,9 +8,9 @@ All protocol settings described below can be found at the top of the **General**
 
 Most users don't need opentrack. LookPilot works directly with games through FreeTrack (TrackIR emulation) and Virtual Joystick protocols. However, opentrack is useful for specific edge cases:
 
-* **Mouse emulation** – for games that only support mouse input for camera control
-* **Additional output protocols** – such as `SimConnect`, `OpenXR`, or raw `UDP` not directly supported by LookPilot
-* **Alternative filtering** – opentrack offers different filtering algorithms (`Accela`, `Kalman`, `EWMA`) that some users prefer
+* **Mouse emulation**: for games that only support mouse input for camera control
+* **Additional output protocols**: such as `SimConnect`, `OpenXR`, or raw `UDP` not directly supported by LookPilot
+* **Alternative filtering**: opentrack offers different filtering algorithms (`Accela`, `Kalman`, `EWMA`) that some users prefer
 
 ## Install opentrack on Linux
 

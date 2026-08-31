@@ -26,13 +26,13 @@ Some games need a bit of setup. Open the **game-specific guides** by clicking th
 
 ## Find your game
 
-Find your game and open the guide for your operating system — **Windows** (1) or **Linux** (2).
+Find your game and open the guide for your operating system: **Windows** (1) or **Linux** (2).
 
 ![Guide search](./guide_search.png)
 
 ## Follow the guide
 
-Here's an example guide. For **Euro Truck Simulator 2**, no extra setup is required — it should work out of the box.
+Here's an example guide. For **Euro Truck Simulator 2**, no extra setup is required, it should work out of the box.
 
 ![Game setup instructions](./game_setup_instructions.png)
 

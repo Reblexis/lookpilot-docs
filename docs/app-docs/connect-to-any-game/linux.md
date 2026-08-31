@@ -70,11 +70,11 @@ If your Steam game doesn't appear in the game dropdown (e.g., installed in a cus
 
 1. Set protocol to `freetrack (Wine)`
 2. Set launcher to `Other`
-3. Select the game's Wine prefix path — for Steam/Proton games this is the `compatdata` prefix:
+3. Select the game's Wine prefix path (for Steam/Proton games this is the `compatdata` prefix):
    - **Default Steam**: `~/.steam/steam/steamapps/compatdata/<appid>/pfx`
    - **Custom library folder**: `<library_path>/steamapps/compatdata/<appid>/pfx`
    
-   > **Tip:** To find your game's app ID, open its Steam store page — the ID is in the URL: `store.steampowered.com/app/<appid>/...`
+   > **Tip:** To find your game's app ID, open its Steam store page, the ID is in the URL: `store.steampowered.com/app/<appid>/...`
 
 4. Select the game's Wine executable path (the Proton binary):
    - **Default Steam**: `~/.steam/steam/steamapps/common/Proton <version>/files/bin/wine`
