@@ -4,7 +4,7 @@
 
 ## Camera setup
 
-First, make sure your camera is connected. Go to **Settings** (1) → **Camera** (2), choose your webcam in the dropdown (3), then select a resolution and FPS (4). Higher FPS usually feels better, but image quality matters — don't pick the lowest resolution. Confirm you can see yourself in the preview.
+First, make sure your camera is connected. Go to **Settings** (1) → **Camera** (2), choose your webcam in the dropdown (3), then select a resolution and FPS (4). Higher FPS usually feels better, but image quality matters, don't pick the lowest resolution. Confirm you can see yourself in the preview.
 
 ![Camera setup](./camera_setup.png)
 
