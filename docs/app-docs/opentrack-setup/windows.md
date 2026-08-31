@@ -1,4 +1,4 @@
-**opentrack** is a free, open-source head-tracking program that manages and transmits pose information to games and simulators.
+**opentrack** is a free, open-source head-tracking program for Windows and Linux that manages and transmits pose information to games and simulators.
 
 ## Where to Find Protocol Settings
 

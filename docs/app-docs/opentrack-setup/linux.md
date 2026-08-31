@@ -1,4 +1,4 @@
-**opentrack** is a free, open-source head-tracking program that manages and transmits pose information to games and simulators.
+**opentrack** is a free, open-source head-tracking program for Windows and Linux that manages and transmits pose information to games and simulators.
 
 ## Where to Find Protocol Settings
 
@@ -12,7 +12,7 @@ Most users don't need opentrack. LookPilot works directly with games through Fre
 * **Additional output protocols** – such as `SimConnect`, `OpenXR`, or raw `UDP` not directly supported by LookPilot
 * **Alternative filtering** – opentrack offers different filtering algorithms (`Accela`, `Kalman`, `EWMA`) that some users prefer
 
-## Installation
+## Install opentrack on Linux
 
 For Linux users, we recommend using the Star Citizen-optimized fork which includes important compatibility fixes for Wine/Proton games:
 

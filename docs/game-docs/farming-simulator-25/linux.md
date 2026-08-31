@@ -13,8 +13,8 @@ If the above method doesn't work, try using the freetrack (Wine) protocol:
 4. Launch the game from Steam
 5. Click **Start tracking** to begin tracking
 
-## Farming Simulator 25 Setup
+## Enable TrackIR and FreeTrack Head Tracking in Farming Simulator 25 on Linux
 1. If launching the game from Steam, make sure to force the use of specific compatibility tool (Proton)
 2. Go to `Settings` → `General Settings`
-3. Enable `Head Tracking` or `TrackIR`
+3. Enable `Head Tracking` or `TrackIR`. LookPilot supplies the compatible FreeTrack or TrackIR input through the selected Wine or Proton prefix.
 
