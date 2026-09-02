@@ -2,6 +2,10 @@
 
 Use this method if you're running the native Linux version of X-Plane 12.
 
+LookPilot's `auto` protocol only finds games running under Wine or Proton, so
+the native X-Plane build (the one Steam installs on Linux) needs the `udp`
+protocol set by hand as below.
+
 ### Prerequisites
 1. Install the headtrack plugin for X-Plane 12:
    - Download the headtrack plugin from GitHub: [amyinorbit/headtrack](https://github.com/amyinorbit/headtrack)
