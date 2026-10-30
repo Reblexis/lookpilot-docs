@@ -47,9 +47,9 @@ These settings apply to all axes as a base value:
 
 **Movement sensitivity** (0.1 - 5.0): Global sensitivity multiplier for movement axes (X, Y, Z) for head tracking. Adjust based on how much physical leaning you want to translate to in-game movement.
 
-**Smoothness** (0.0 - 3.0): Global smoothing amount applied to both head and eye tracking. Higher values reduce jitter but add latency. Increase if tracking feels jittery, decrease if it feels sluggish.
+**Smoothness** (0.0 - 3.0, default 1.0): Global smoothing amount applied to both head and eye tracking. Higher values reduce jitter but add latency. Increase if tracking feels jittery, decrease if it feels sluggish.
 
-**Deadzone** (0.0 - 3.0): Global deadzone amount applied to both head and eye tracking. Creates a zone where small movements are ignored, preventing drift when sitting still. Increase if camera drifts, decrease if tracking feels unresponsive.
+**Deadzone** (0.0 - 3.0, default 1.0): Global deadzone amount applied to both head and eye tracking. Creates a zone where small movements are ignored, so the view stays still while you hold your head still. Increase (1.5-2) if the view shakes or drifts, decrease if tracking feels unresponsive.
 
 **Confidence threshold** (0.0 - 1.0): Minimum tracking confidence score required before the tracking search region resets. Lower values allow tracking in poor lighting or with lower quality cameras but may be less accurate. Increase for more stable tracking in good conditions.
 
@@ -128,29 +128,25 @@ Key formula interactions:
 
 ## Quick Start Recommendations
 
+Start from the defaults: global smoothness 1.0 and global deadzone 1.0. If the view shakes while you hold your head still, raise the deadzone to 1.5-2 (a webcam very close to your face or a dim room needs more). Lower either value only if tracking feels delayed.
+
 **General use**:
 - Enable: Yaw, Pitch for head; optionally Roll
-- Global smoothness: 0.3
-- Global deadzone: 0.1
 - Keep curves at default (linear)
 - Adjust per-axis sensitivity if specific axes feel too fast/slow
 
 **Flight simulation**:
 - Enable: All head axes (Yaw, Pitch, Roll, X, Y, Z)
-- Global smoothness: 0.2-0.4
-- Global deadzone: 0.05-0.1
 - Consider asymmetric curves for more precise control in specific directions
 
 **Racing**:
 - Enable: Yaw, Pitch, Roll, X for leaning into turns
-- Global smoothness: 0.4-0.5
-- Consider higher deadzone (0.15) for stability
+- Global smoothness: 1.3-1.7
+- Consider a higher deadzone (1.5) for stability
 
 **First-person shooters**:
 - Enable: Only Yaw and Pitch for head
-- Global smoothness: 0.2-0.3
-- Global deadzone: 0.05-0.1
-- Consider adding eye tracking (influence 0.2-0.4) for target acquisition
+- Global smoothness: 0.7-1.0
 
 ## FAQ
 
